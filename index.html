@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>LeDroitFacile SN — Le droit, simplement</title>
 <meta property="og:title" content="LeDroitFacile SN — Le droit, simplement"><meta property="og:description" content="Explications, méthodologie, orientation et communauté pour les étudiants en droit au Sénégal."><meta name="theme-color" content="#0a1330"><meta name="description" content="LeDroitFacile SN accompagne les étudiants en droit au Sénégal : explications, méthodologie, orientation et communauté.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#0a1330;--bg2:#0f1c44;--ink:#f6f2e8;--mut:#b9c0d6;--gold:#d4a843;--gold2:#f0d27a;--green:#2e9a5b;--paper:#f3f0ea;--line:rgba(212,168,67,.28);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -200,6 +201,12 @@ p.on{font-size:14px;color:var(--mut);border-left:3px solid var(--gold);padding-l
 .dweb{margin-top:34px;border:1px solid var(--gold);border-radius:16px;padding:22px;background:rgba(212,168,67,.07);max-width:820px}
 .dweb h3{font-size:28px;color:var(--gold2)}.dweb p{margin:6px 0 0;color:var(--mut)}
 #droit .cb{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}#droit .cb .btn{font-size:14px;padding:10px 18px}
+.nm{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}.nm label{color:var(--mut);font-size:14px}.nm input{font:inherit;color:var(--ink);background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:10px;padding:8px 12px;min-width:150px;flex:1;max-width:240px}
+.lb{width:100%;border-collapse:collapse;margin-top:12px}.lb td,.lb th{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left;font-size:15px}.lb th{color:var(--mut);font-weight:600}.lb .tn{text-align:right}.lb tr.me td{color:var(--gold2);font-weight:700}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px}.chips .on{background:var(--gold)!important;color:#101a3a!important;font-weight:700}
+.shr{margin-top:20px;padding-top:14px;border-top:1px solid var(--line)}.shr .qz-e{margin:0 0 8px;min-height:0}.shr-r{display:flex;gap:8px;flex-wrap:wrap}a.qz-x{text-decoration:none;display:inline-block}
+.vs{margin:14px 0;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:rgba(212,168,67,.08)}.vs strong{font:700 30px "Cormorant Garamond",Georgia,serif;color:var(--gold2)}.vs p{margin:6px 0 0}
+#offb{position:fixed;left:50%;bottom:78px;transform:translateX(-50%);background:var(--gold);color:#101a3a;padding:8px 16px;border-radius:999px;font-weight:700;font-size:14px;z-index:30;display:none;white-space:nowrap}
 </style></head>
 <body>
 <header><div class="wrap"><a class="brand" href="#/accueil">Le<b>Droit</b>Facile<span class="sn">SN</span></a>
@@ -296,7 +303,7 @@ p.on{font-size:14px;color:var(--mut);border-left:3px solid var(--gold);padding-l
 
 <section class="alt" id="entrainement" data-page="entrainement"><div class="wrap">
 <h2>Entraîne-toi aux tests psychotechniques.</h2>
-<p class="lead">Les concours de la fonction publique, comme celui de l’ENA, commencent par des tests de langue française, de calcul et de logique. Choisis une rubrique parmi sept : orthographe, vocabulaire, analogies, calcul, suites numériques, lettres et codes, raisonnement logique. Chaque rubrique compte 30 questions de niveau concours, corrigées une à une. Tu peux la quitter à tout moment pour une autre.</p>
+<p class="lead">Les concours de la fonction publique, comme celui de l’ENA, commencent par des tests de langue française, de calcul et de logique. Choisis une rubrique parmi sept : orthographe, vocabulaire, analogies, calcul, suites numériques, lettres et codes, raisonnement logique. Chaque rubrique compte 30 questions de niveau concours, corrigées une à une. Tu peux la quitter à tout moment pour une autre. Défie un ami par lien d’invitation, partage ton score et grimpe au classement.</p>
 <div class="ena"><div><h3>Prépare le concours d’entrée à l’ENA</h3><p>Rejoins le groupe WhatsApp « Préparation ENA (LeDroitFacile) » pour t’entraîner avec d’autres candidats.</p></div><a class="btn pri" href="https://chat.whatsapp.com/Ft5zjQXXGmTLjy0iXemyNI?mode=gi_t" target="_blank" rel="noopener">Rejoindre le groupe ENA</a></div>
 <div class="qz" id="qz" aria-live="polite"></div>
 <p class="legal" style="margin:14px 0 0;text-align:left">Questions originales rédigées pour LeDroitFacile SN, à titre d’entraînement. Pour les épreuves officielles, réfère-toi à l’avis de concours en vigueur.</p>
@@ -629,6 +636,7 @@ II. Titre de la seconde partie
 <div><h4>Naviguer</h4><a href="#/apropos">Ce que nous faisons</a><a href="#/orientation">Orientation</a><a href="#/entrainement">Tests psychotechniques</a><a href="#/faq">Questions</a><a href="#/droit">Droit sénégalais</a></div>
 <div><h4>Nous suivre</h4><a href="https://www.tiktok.com/@le_droit_facile" target="_blank" rel="noopener">TikTok</a><a href="https://chat.whatsapp.com/H9mxDDLu6TU9LaUWVh37m3?mode=gi_t" target="_blank" rel="noopener">Groupe WhatsApp</a><a href="https://chat.whatsapp.com/Ft5zjQXXGmTLjy0iXemyNI?mode=gi_t" target="_blank" rel="noopener">Groupe Préparation ENA</a></div>
 </div>
+<p class="legal"><button id="inst" type="button" class="qz-x" style="display:none">📲 Installer l’application</button> Le site fonctionne hors ligne après une première visite. Sur iPhone : Partager, puis « Sur l’écran d’accueil ».</p>
 <p class="legal">Les contenus de LeDroitFacile SN ont une vocation pédagogique. Ils ne constituent pas un conseil juridique personnalisé.</p>
 <p class="legal">© LeDroitFacile SN. Tous droits réservés.</p></div></footer>
 <button id="up" type="button" aria-label="Retour en haut" hidden>↑</button>
@@ -660,8 +668,9 @@ var R=[
 ["Raisonnement logique","Déductions, ordres, syllogismes",[]]
 ];
 var NQ=30;
-function sh(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x}return a}
-function ri(a,b){return a+Math.floor(Math.random()*(b-a+1))}
+var rnd=Math.random;
+function sh(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(rnd()*(i+1)),x=a[i];a[i]=a[j];a[j]=x}return a}
+function ri(a,b){return a+Math.floor(rnd()*(b-a+1))}
 function pk(a){return a[ri(0,a.length-1)]}
 function f(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,' ')}
 function mk(q,c,w,e){var o=sh([c].concat(w));return [q,o,o.indexOf(c),e]}
@@ -801,7 +810,7 @@ if(k===6){var C=ri(1,5)*100000;t=pk([5,10,20]);c=Math.round(C*Math.pow(1+t/100,2
 if(k===7){var V=pk([20,40,60,80]);p=pk([20,25,30,40]);q=pk([10,15,20]);if(q>=p||(V*p)%q!==0)return gCalc();c=V*p/q-V;return mk('Un mélange de '+V+' L contient '+p+' % d’alcool. Combien de litres d’eau faut-il ajouter pour descendre à '+q+' % ?',c+' L',W3(c,[V*p/q,V-c,c+5],function(x){return x+' L'}),'Alcool pur : '+V*p/100+' L. Volume final : '+(V*p/q)+' L. On ajoute '+c+' L.')}
 if(k===8){var x=ri(5,30);a=ri(2,6);b=ri(3,40);c=a*x+b;return mk('Le nombre multiplié par '+a+', puis augmenté de '+b+', donne '+c+'. Quel est ce nombre ?',String(x),W3(x,[x+1,x-1,x+2,x-2]),a+'x + '+b+' = '+c+' donc x = '+x+'.')}
 var Q=ri(2,20)*10000;p=pk([10,20,25,30,40]);c=Q*(100-p)/100;return mk('Après une remise de '+p+' %, un article coûte '+f(c)+' F. Quel était son prix initial ?',f(Q)+' F',W3(Q,[Math.round(c*(100+p)/100),c+p*Q/1000,Q+Q/10],function(x){return f(x)+' F'}),'Prix initial = '+f(c)+' ÷ '+(100-p)/100+' = '+f(Q)+' F.')}
-function gLetC(){var w=pk(['DROIT','JUGE','LOI','CODE','ARRET','DOSSIER','TRIBUNAL','APPEL']),n=ri(3,9),fw=Math.random()<.5;function z(m){return w.split('').map(function(l){return A[(A.indexOf(l)+m+26)%26]}).join('')}
+function gLetC(){var w=pk(['DROIT','JUGE','LOI','CODE','ARRET','DOSSIER','TRIBUNAL','APPEL']),n=ri(3,9),fw=rnd()<.5;function z(m){return w.split('').map(function(l){return A[(A.indexOf(l)+m+26)%26]}).join('')}
 var sg=fw?1:-1,good=z(sg*n);return mk('Si on décale chaque lettre de '+n+' rangs '+(fw?'vers l’avant':'vers l’arrière')+' (l’alphabet est circulaire), '+w+' devient :',good,U3(good,[z(-sg*n),z(sg*(n+1)),z(sg*(n-1)),z(sg*(n+2)),z(sg*(n-2))]),'Chaque lettre est décalée de '+n+' rangs '+(fw?'vers l’avant':'vers l’arrière')+', en repartant de l’autre bout si nécessaire.')}
 function gDir(){var T=pk([[3,4,5],[4,3,5],[6,8,10],[8,6,10],[5,12,13],[12,5,13]]),dl=T[1],Nn=dl+ri(1,8),Sd=Nn-dl,c=T[2];
 return mk('Cheikh marche '+Nn+' km vers le nord, puis '+T[0]+' km vers l’est, puis '+Sd+' km vers le sud. À quelle distance de son point de départ se trouve-t-il ?',c+' km',W3(c,[dl+T[0],Nn+T[0]+Sd,c+2,c-1],function(x){return x+' km'}),'Il est à '+dl+' km au nord et '+T[0]+' km à l’est : √('+dl+'² + '+T[0]+'²) = '+c+' km.')}
@@ -827,25 +836,77 @@ function gAge(){var n=ri(2,6),b=ri(n+3,n+14),a=3*(b-n)+n,S=a+b;return mk('Il y a
 function gDir(){var T=pk([[3,4,5],[4,3,5],[6,8,10],[8,6,10],[5,12,13],[12,5,13]]),dl=T[1],Nn=dl+ri(1,8),Sd=Nn-dl,c=T[2],pa=pk(['nord','sud']);
 return mk('Cheikh marche '+Nn+' km vers le nord, puis '+T[0]+' km vers l’est, puis '+Sd+' km vers le sud. À quelle distance de son point de départ se trouve-t-il ?',c+' km',[(dl+T[0])+' km',(Nn+T[0]+Sd)+' km',(c+2)+' km'].filter(function(x,i,s){return s.indexOf(x)===i&&x!==c+' km'}).concat([(c-1)+' km']).slice(0,3),'Il est à '+dl+' km au nord et '+T[0]+' km à l’est : √('+dl+'² + '+T[0]+'²) = '+c+' km.')}
 function gLog(){var k=ri(0,3);if(k===0)return ordF();if(k===1)return gDay();if(k===2)return gAge();return gDir()}
-R[0][2]=H(EX[0]);R[1][2]=H(EX[1]);R[2][2]=H(EX[2]);
-R[3][2]=many(gCalc,NQ);R[4][2]=many(gSuite,NQ);R[5][2]=many(gLet,NQ);
-R[6][2]=H(LOG).concat(many(gLog,NQ-LOG.length));
-R.forEach(function(r){if(r[2].length>NQ)r[2]=r[2].slice(0,NQ)});
+function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function newSeed(){return Math.floor(Math.random()*2147483646)+1}
+function buildQ(n,seed){rnd=mulberry(seed);var q;
+if(n<3)q=sh(H(EX[n]));
+else if(n===3)q=many(gCalc,NQ);else if(n===4)q=many(gSuite,NQ);else if(n===5)q=many(gLet,NQ);
+else q=sh(H(LOG).concat(many(gLog,NQ-LOG.length)));
+rnd=Math.random;return q.slice(0,NQ)}
+/* Classement mondial (facultatif) : colle ici l’adresse d’une base Firebase Realtime Database, ex. 'https://mon-projet-default-rtdb.firebaseio.com' */
+var LB_URL='';
+R.forEach(function(r,n){r[2]=buildQ(n,n+1)});
 var box=document.getElementById('qz');if(!box)return;
-var best={},cur,i,score,t0,tick;
+var cur,i,score,t0,tick,seed,duel=null,Qs=[];
 function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
 function fmt(s){return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2)}
-function menu(){clearInterval(tick);box.textContent='';
+function sto(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+function myName(){return (sto('ldf-name')||'').trim()}
+function ldb(){try{var a=JSON.parse(sto('ldf-lb')||'[]');return Array.isArray(a)?a:[]}catch(e){return []}}
+function addScore(e){var a=ldb();a.push(e);sto('ldf-lb',JSON.stringify(a.slice(-400)))}
+function myBest(n){var nm=(myName()||'Joueur').toLowerCase(),b=null;ldb().forEach(function(e){if(e.o==='me'&&e.c===n&&String(e.n).toLowerCase()===nm&&(b===null||e.p>b))b=e.p});return b}
+function cmp(a,b){return b.p-a.p||a.t-b.t}
+function stand(es,c){var m={},k;
+if(c==='g'){es.forEach(function(e){k=String(e.n).toLowerCase();var u=m[k]||(m[k]={n:e.n,c:{}}),o=u.c[e.c];if(!o||e.p>o.p||(e.p===o.p&&e.t<o.t))u.c[e.c]={p:e.p,t:e.t}});
+return Object.keys(m).map(function(k){var u=m[k],p=0,t=0,z=0;for(var q in u.c){p+=u.c[q].p;t+=u.c[q].t;z++}return {n:u.n,p:p,t:t,z:z}}).sort(cmp)}
+es.forEach(function(e){if(e.c!==c)return;k=String(e.n).toLowerCase();var o=m[k];if(!o||e.p>o.p||(e.p===o.p&&e.t<o.t))m[k]=e});
+return Object.keys(m).map(function(k){return {n:m[k].n,p:m[k].p,t:m[k].t,z:1}}).sort(cmp)}
+function gFetch(c){if(!LB_URL)return Promise.reject();
+var cats=c==='g'?[0,1,2,3,4,5,6]:[c];
+return Promise.all(cats.map(function(k){return fetch(LB_URL+'/scores/c'+k+'.json?orderBy=%22%24key%22&limitToLast=300').then(function(r){return r.json()}).then(function(o){return Object.keys(o||{}).map(function(id){var e=o[id]||{};return {n:String(e.n||'?').slice(0,20),c:k,p:+e.p||0,t:+e.t||0}}).filter(function(e){return e.p>=0&&e.p<=NQ})})})).then(function(a){return [].concat.apply([],a)})}
+function gPost(e){if(!LB_URL)return;try{fetch(LB_URL+'/scores/c'+e.c+'.json',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({n:e.n,p:e.p,t:e.t})}).catch(function(){})}catch(x){}}
+function baseUrl(){return /^https?:/.test(location.protocol)?location.origin+location.pathname:'https://bayeiboudiop09-a11y.github.io/LeDroitFacile-/'}
+function enc(o){return btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')}
+function dec(s){try{s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';var o=JSON.parse(decodeURIComponent(escape(atob(s))));
+if(!o||typeof o.n!=='string'||!(o.c>=0&&o.c<7)||!(o.s>0)||!(o.p>=0&&o.p<=NQ)||!(o.t>=0&&o.t<=86400))return null;
+return {n:o.n.slice(0,20),c:o.c|0,s:o.s|0,p:o.p|0,t:o.t|0}}catch(e){return null}}
+function copy(s,b){var o=b.textContent;function ok(){b.textContent='Copié ✓';setTimeout(function(){b.textContent=o},1600)}
+function fb(){var ta=document.createElement('textarea');ta.value=s;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok()}catch(e){}document.body.removeChild(ta)}
+if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(s).then(ok,fb);else fb()}
+function shr(title,text,url){var d=el('div','shr');d.appendChild(el('p','qz-e',title));var r=el('div','shr-r'),full=text+' '+url,u=encodeURIComponent(url),t=encodeURIComponent(text);
+function lk(l,h){var a=el('a','qz-x',l);a.href=h;a.target='_blank';a.rel='noopener';r.appendChild(a)}
+if(navigator.share){var b=el('button','qz-x','Partager…');b.type='button';b.onclick=function(){navigator.share({title:'LeDroitFacile SN',text:text,url:url}).catch(function(){})};r.appendChild(b)}
+lk('WhatsApp','https://wa.me/?text='+encodeURIComponent(full));lk('Facebook','https://www.facebook.com/sharer/sharer.php?u='+u+'&quote='+t);lk('X','https://twitter.com/intent/tweet?text='+t+'&url='+u);lk('Telegram','https://t.me/share/url?url='+u+'&text='+t);
+var cp=el('button','qz-x','Copier le lien');cp.type='button';cp.onclick=function(){copy(full,cp)};r.appendChild(cp);d.appendChild(r);return d}
+function menu(){clearInterval(tick);box.textContent='';duel=null;
+var nr=el('div','nm'),lb=el('label',0,'Ton pseudo'),inp=el('input');lb.htmlFor='nmi';inp.id='nmi';inp.maxLength=20;inp.placeholder='ex. Awa';inp.value=myName();inp.oninput=function(){sto('ldf-name',inp.value.trim().slice(0,20))};
+nr.appendChild(lb);nr.appendChild(inp);var cb=el('button','qz-x','🏆 Classement');cb.type='button';cb.onclick=function(){board('g')};nr.appendChild(cb);box.appendChild(nr);
 box.appendChild(el('p','qz-q','Choisis une rubrique'));
 var g=el('div','rb');
-R.forEach(function(r,n){var b=el('button','rb-c');b.type='button';
+R.forEach(function(r,n){var b=el('button','rb-c'),mb=myBest(n);b.type='button';
 b.appendChild(el('strong',0,r[0]));b.appendChild(el('span',0,r[1]));
-b.appendChild(el('em',0,best[n]!=null?'Meilleur score : '+best[n]+' / '+r[2].length:r[2].length+' questions'));
-b.onclick=function(){start(n)};g.appendChild(b)});box.appendChild(g)}
-function start(n){cur=n;i=0;score=0;t0=Date.now();sh(R[n][2]);show()}
+b.appendChild(el('em',0,mb!=null?'Meilleur score : '+mb+' / '+NQ:NQ+' questions'));
+b.onclick=function(){start(n)};g.appendChild(b)});box.appendChild(g);
+box.appendChild(el('p','qz-e','⚔️ Pour défier un ami : termine une rubrique puis envoie-lui le lien de ton défi. Il jouera exactement les mêmes questions que toi.'))}
+function board(c,src){clearInterval(tick);box.textContent='';if(c==null)c='g';src=src||(LB_URL?'global':'local');
+box.appendChild(el('p','qz-q','🏆 Classement'));
+var ch=el('div','chips'),names=['Général'].concat(R.map(function(r){return r[0]}));
+['g',0,1,2,3,4,5,6].forEach(function(k,x){var b=el('button','qz-x',names[x]);b.type='button';if(k===c)b.className+=' on';b.onclick=function(){board(k,src)};ch.appendChild(b)});box.appendChild(ch);
+if(LB_URL){var sw=el('div','chips');[['global','Mondial'],['local','Cet appareil']].forEach(function(s){var b=el('button','qz-x',s[1]);b.type='button';if(s[0]===src)b.className+=' on';b.onclick=function(){board(c,s[0])};sw.appendChild(b)});box.appendChild(sw)}
+var out=el('div'),note=el('p','qz-e','');box.appendChild(out);box.appendChild(note);
+function fill(es,msg){out.textContent='';var L=stand(es,c).slice(0,20),me=(myName()||'Joueur').toLowerCase();
+if(!L.length){out.appendChild(el('p','qz-e','Aucun score pour l’instant. Joue une rubrique pour apparaître ici.'))}
+else{var t=el('table','lb'),th=el('tr');['#','Joueur',c==='g'?'Points':'Score','Temps'].forEach(function(h,x){th.appendChild(el('th',x>1?'tn':0,h))});t.appendChild(th);
+L.forEach(function(e,x){var tr=el('tr',String(e.n).toLowerCase()===me?'me':0);tr.appendChild(el('td',0,x<3?['🥇','🥈','🥉'][x]:String(x+1)));tr.appendChild(el('td',0,e.n+(c==='g'?' · '+e.z+'/7':'')));tr.appendChild(el('td','tn',e.p+(c==='g'?'':' / '+NQ)));tr.appendChild(el('td','tn',fmt(e.t)));t.appendChild(tr)});out.appendChild(t)}
+note.textContent=msg||''}
+var loc='Classement enregistré sur cet appareil : il réunit tes parties et les joueurs qui t’ont défié.';
+if(src==='global'){out.appendChild(el('p','qz-e','Chargement…'));gFetch(c).then(function(es){fill(es,'Classement mondial (meilleur score de chaque joueur).')}).catch(function(){fill(ldb(),'Connexion impossible : classement de cet appareil.')})}
+else fill(ldb(),loc);
+var bk=el('button','btn sec','← Rubriques');bk.type='button';bk.style.marginTop='16px';bk.onclick=menu;box.appendChild(bk)}
+function start(n,sd,d){cur=n;seed=sd||newSeed();duel=d||null;Qs=buildQ(n,seed);i=0;score=0;t0=Date.now();show()}
 function show(){
-var Q=R[cur][2],q=Q[i];box.textContent='';
-var top=el('div','qz-top');top.appendChild(el('span',0,R[cur][0]+' · '+(i+1)+' / '+Q.length));
+var Q=Qs,q=Q[i];box.textContent='';
+var top=el('div','qz-top');top.appendChild(el('span',0,(duel?'⚔️ ':'')+R[cur][0]+' · '+(i+1)+' / '+Q.length));
 var tm=el('span',0,'⏱ '+fmt(Math.round((Date.now()-t0)/1000)));top.appendChild(tm);var qb=el('button','qz-x','← Changer de rubrique');qb.type='button';qb.onclick=menu;top.appendChild(qb);box.appendChild(top);var pb=el('div','qz-pb'),pf=el('span');pf.style.width=(i/Q.length*100)+'%';pb.appendChild(pf);box.appendChild(pb);
 clearInterval(tick);tick=setInterval(function(){tm.textContent='⏱ '+fmt(Math.round((Date.now()-t0)/1000))},1000);
 box.appendChild(el('p','qz-q',q[0]));
@@ -857,14 +918,32 @@ ex.textContent=(k===q[2]?'Bonne réponse. ':'Pas tout à fait. ')+q[3];
 var nx=el('button','btn pri',i<Q.length-1?'Question suivante':'Voir mon résultat');nx.type='button';
 nx.onclick=function(){i++;if(i<Q.length)show();else end()};box.appendChild(nx);nx.focus()};o.appendChild(b)});
 box.appendChild(o);box.appendChild(ex)}
-function end(){clearInterval(tick);var n=R[cur][2].length;
-if(best[cur]==null||score>best[cur])best[cur]=score;box.textContent='';
+function end(){clearInterval(tick);var n=Qs.length,sec=Math.round((Date.now()-t0)/1000),nm=myName()||'Joueur',rn=R[cur][0],site=baseUrl();
+var e={n:nm,c:cur,p:score,t:sec,d:Date.now(),o:'me'};addScore(e);gPost(e);box.textContent='';
 box.appendChild(el('div','qz-res',score+' / '+n));
-box.appendChild(el('p',0,R[cur][0]+' · temps : '+fmt(Math.round((Date.now()-t0)/1000))));
-box.appendChild(el('p','qz-e',score===n?'Sans faute. Passe à une autre rubrique pour varier.':score>=n-2?'Bonne base. Refais la rubrique pour gagner en vitesse.':'Pas de panique : ces tests demandent surtout de la méthode et de la pratique.'));
-var r=el('button','btn pri','Recommencer');r.type='button';r.onclick=function(){start(cur)};
+box.appendChild(el('p',0,rn+' · temps : '+fmt(sec)));
+var vt='';
+if(duel){var w=score!==duel.p?(score>duel.p?1:-1):(sec!==duel.t?(sec<duel.t?1:-1):0);
+vt=w>0?'Victoire 🎉':w<0?'Défaite':'Égalité';
+var vs=el('div','vs');vs.appendChild(el('strong',0,vt));
+vs.appendChild(el('p',0,'⚔️ Toi : '+score+' / '+n+' en '+fmt(sec)+'  ·  '+duel.n+' : '+duel.p+' / '+n+' en '+fmt(duel.t)));
+vs.appendChild(el('p','qz-e','En cas d’égalité de score, le plus rapide gagne.'));box.appendChild(vs)}
+else box.appendChild(el('p','qz-e',score===n?'Sans faute. Passe à une autre rubrique pour varier.':score>=n-4?'Très bon niveau. Refais la rubrique pour gagner en vitesse.':'Pas de panique : ces tests demandent surtout de la méthode et de la pratique.'));
+var r=el('button','btn pri',duel?'Revanche':'Recommencer');r.type='button';r.onclick=function(){start(cur)};
 var m=el('button','btn sec','Autres rubriques');m.type='button';m.style.marginLeft='10px';m.onclick=menu;
-box.appendChild(r);box.appendChild(m)}
+var lbb=el('button','btn sec','🏆 Classement');lbb.type='button';lbb.style.marginLeft='10px';lbb.onclick=function(){board(cur)};
+box.appendChild(r);box.appendChild(m);box.appendChild(lbb);
+if(duel){box.appendChild(shr('Partager ce duel',nm+' '+score+'/'+n+' contre '+duel.n+' '+duel.p+'/'+n+' en « '+rn+' » sur LeDroitFacile SN : '+vt+'.',site+'#/entrainement'))}
+else{var link=site+'#/entrainement?d='+enc({c:cur,s:seed,n:nm,p:score,t:sec});
+box.appendChild(shr('⚔️ Défier un ami (mêmes questions que toi)','⚔️ '+nm+' te défie en « '+rn+' » sur LeDroitFacile SN ! Score à battre : '+score+'/'+n+' en '+fmt(sec)+'.',link));
+box.appendChild(shr('Partager mon score','J’ai fait '+score+'/'+n+' en « '+rn+' » sur LeDroitFacile SN ('+fmt(sec)+'). Tu peux faire mieux ?',site+'#/entrainement'))}}
+function duelIntro(o){clearInterval(tick);box.textContent='';
+box.appendChild(el('p','qz-q','⚔️ '+o.n+' te défie !'));
+box.appendChild(el('p',0,R[o.c][0]+' · '+NQ+' questions. Score à battre : '+o.p+' / '+NQ+' en '+fmt(o.t)+'.'));
+var nr=el('div','nm'),lb=el('label',0,'Ton pseudo'),inp=el('input');lb.htmlFor='nmd';inp.id='nmd';inp.maxLength=20;inp.placeholder='ex. Moussa';inp.value=myName();nr.appendChild(lb);nr.appendChild(inp);box.appendChild(nr);
+var go=el('button','btn pri','Relever le défi');go.type='button';go.onclick=function(){sto('ldf-name',inp.value.trim().slice(0,20));addScore({n:o.n,c:o.c,p:o.p,t:o.t,d:Date.now(),o:'duel'});start(o.c,o.s,o)};
+var no=el('button','btn sec','Choisir une autre rubrique');no.type='button';no.style.marginLeft='10px';no.onclick=menu;box.appendChild(go);box.appendChild(no)}
+window.ldfOnRoute=function(q){var m=/(?:^|&)d=([^&]+)/.exec(q||'');if(!m)return;var o=dec(m[1]);if(o)duelIntro(o)};
 menu();
 })();
 
@@ -876,7 +955,8 @@ document.getElementById('back').style.display=h==='accueil'?'none':'';
 document.querySelectorAll('nav a,.menu a,.bn a').forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#/'+h)});
 var e=a&&document.getElementById(a);if(e&&a!=='top')e.scrollIntoView({behavior:'smooth',block:'start'});else window.scrollTo(0,0)}
 function route(){var h=location.hash.replace(/^#\/?/,'')||(function(){try{return localStorage.getItem('ldf-page')}catch(e){return null}})()||'accueil',a=pend;pend=null;
-if(h==='rejoindre'){h='accueil';a='rejoindre'}if(PG.indexOf(h)<0)h='accueil';show(h,a)}
+var qi=h.indexOf('?'),q='';if(qi>=0){q=h.slice(qi+1);h=h.slice(0,qi)}
+if(h==='rejoindre'){h='accueil';a='rejoindre'}if(PG.indexOf(h)<0)h='accueil';show(h,a);if(window.ldfOnRoute)window.ldfOnRoute(q)}
 function go(pg,a){pend=a;if(location.hash==='#/'+pg)route();else location.hash='#/'+pg}
 window.addEventListener('hashchange',route);route();
 
@@ -1006,5 +1086,14 @@ var y=$('djy'),yr=new Date().getFullYear();for(var i=yr;i>=1960;i--){var o=docum
 function jo(){$('djg').href='https://www.vie-publique.sn/documents/journal-officiel-senegal/annee/'+y.value}y.addEventListener('change',jo);jo();
 draw();
 })();
+</script>
+<div id="offb" role="status">Mode hors ligne : le site reste disponible</div>
+<script>
+(function(){var b=document.getElementById('offb');function st(){b.style.display=navigator.onLine?'none':'block'}
+window.addEventListener('online',st);window.addEventListener('offline',st);st();
+if('serviceWorker' in navigator&&/^https?:/.test(location.protocol)){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}
+var ip=null,bt=document.getElementById('inst');window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();ip=e;if(bt)bt.style.display=''});
+if(bt)bt.onclick=function(){if(!ip)return;ip.prompt();ip=null;bt.style.display='none'};
+window.addEventListener('appinstalled',function(){if(bt)bt.style.display='none'})})();
 </script>
 </body></html>

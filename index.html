@@ -296,7 +296,7 @@ p.on{font-size:14px;color:var(--mut);border-left:3px solid var(--gold);padding-l
 
 <section class="alt" id="entrainement" data-page="entrainement"><div class="wrap">
 <h2>Entraîne-toi aux tests psychotechniques.</h2>
-<p class="lead">Les concours de la fonction publique, comme celui de l’ENA, commencent par des tests de langue française, de calcul et de logique. Choisis une rubrique parmi sept : orthographe, vocabulaire, analogies, calcul, suites numériques, lettres et codes, raisonnement logique. Chaque rubrique compte 20 questions, corrigées une à une. Tu peux la quitter à tout moment pour une autre.</p>
+<p class="lead">Les concours de la fonction publique, comme celui de l’ENA, commencent par des tests de langue française, de calcul et de logique. Choisis une rubrique parmi sept : orthographe, vocabulaire, analogies, calcul, suites numériques, lettres et codes, raisonnement logique. Chaque rubrique compte 30 questions de niveau concours, corrigées une à une. Tu peux la quitter à tout moment pour une autre.</p>
 <div class="ena"><div><h3>Prépare le concours d’entrée à l’ENA</h3><p>Rejoins le groupe WhatsApp « Préparation ENA (LeDroitFacile) » pour t’entraîner avec d’autres candidats.</p></div><a class="btn pri" href="https://chat.whatsapp.com/Ft5zjQXXGmTLjy0iXemyNI?mode=gi_t" target="_blank" rel="noopener">Rejoindre le groupe ENA</a></div>
 <div class="qz" id="qz" aria-live="polite"></div>
 <p class="legal" style="margin:14px 0 0;text-align:left">Questions originales rédigées pour LeDroitFacile SN, à titre d’entraînement. Pour les épreuves officielles, réfère-toi à l’avis de concours en vigueur.</p>
@@ -651,137 +651,186 @@ document.querySelectorAll(".menu a").forEach(function(a){a.addEventListener("cli
 
 (function(){
 var R=[
-["Orthographe et grammaire","Accords, graphies, pièges courants",[
-["Quelle phrase est correcte ?",["Les lettres que j’ai écrit","Les lettres que j’ai écrites","Les lettres que j’ai écrite","Les lettres que j’ai écris"],1,"Le COD « que » (les lettres) est placé avant le verbe : le participe s’accorde."],
-["Quel mot est bien orthographié ?",["rhytme","rythme","rithme","rhythme"],1,"On écrit rythme."],
-["___ soient vos raisons, vous devez venir.",["Quelque","Quelles que","Quel que","Quelles qu’"],1,"Quelles que s’écrit en deux mots et s’accorde avec « raisons »."],
-["Elles se sont ___ la main.",["serré","serrées","serrés","serrée"],0,"Le COD « la main » est après le verbe : le participe reste invariable."],
-["Quel mot est mal orthographié ?",["exigence","apparemment","occurence","développement"],2,"On écrit occurrence, avec deux r."]]],
-["Vocabulaire","Synonymes, antonymes, paronymes, sens des mots",[
-["Synonyme de « loquace » :",["bavard","silencieux","timide","sévère"],0,"Une personne loquace parle beaucoup."],
-["Antonyme de « frugal » :",["sobre","copieux","rapide","maigre"],1,"Un repas frugal est simple et léger ; le contraire est copieux."],
-["Le voleur a été condamné pour ___ de domicile.",["infraction","effraction","affraction","extraction"],1,"L’effraction est le fait de forcer une entrée."],
-["« Ubiquité » signifie :",["capacité d’être partout à la fois","goût de la solitude","habitude de mentir","grande rapidité"],0,"L’ubiquité est la faculté d’être présent en plusieurs lieux en même temps."],
-["Synonyme de « pérenne » :",["durable","fragile","récent","discret"],0,"Pérenne se dit de ce qui dure longtemps."]]],
-["Analogies et intrus","Relations entre mots, chasse à l’intrus",[
-["Pilote : avion :: Capitaine : ?",["armée","navire","école","pays"],1,"Le pilote conduit un avion, le capitaine commande un navire."],
-["Froid : glacial :: Chaud : ?",["tiède","brûlant","humide","doux"],1,"Glacial est l’intensité extrême de froid ; brûlant, celle de chaud."],
-["Quel est l’intrus ?",["Constitution","loi","décret","tableau"],3,"Les trois autres sont des textes juridiques."],
-["Quel est l’intrus ?",["Dakar","Thiès","Kaolack","Abidjan"],3,"Abidjan n’est pas une ville du Sénégal."],
-["Livre : bibliothèque :: Tableau : ?",["musée","peintre","couleur","cadre"],0,"On range les livres en bibliothèque et on expose les tableaux au musée."]]],
-["Calcul et problèmes","Calcul mental, pourcentages, proportions",[
-["25 × 12 =",["250","300","320","350"],1,"25 × 4 × 3 = 100 × 3 = 300."],
-["Un prix de 80 000 F augmente de 10 %, puis baisse de 10 %. Prix final ?",["80 000 F","79 200 F","78 000 F","81 000 F"],1,"80 000 × 1,1 = 88 000, puis × 0,9 = 79 200."],
-["Moyenne de 12, 15, 18 et 15 :",["14","15","16","17"],1,"60 ÷ 4 = 15."],
-["Quatre ouvriers font un mur en 6 jours. Combien de jours pour 8 ouvriers ?",["2","3","4","12"],1,"Deux fois plus d’ouvriers, deux fois moins de temps."],
-["Intérêt simple de 100 000 F à 5 % pendant 3 ans :",["5 000 F","15 000 F","150 000 F","10 000 F"],1,"100 000 × 0,05 × 3 = 15 000."]]],
-["Suites numériques","Trouver la règle, puis le terme suivant",[
-["4, 8, 16, 32, ?",["48","56","64","72"],2,"Chaque terme est multiplié par 2."],
-["100, 91, 82, 73, ?",["63","64","65","66"],1,"On retire 9 à chaque fois."],
-["1, 2, 4, 7, 11, ?",["15","16","17","18"],1,"Les écarts sont 1, 2, 3, 4, puis 5."],
-["1, 1, 2, 3, 5, 8, ?",["11","12","13","14"],2,"Chaque terme est la somme des deux précédents."],
-["5, 10, 8, 16, 14, 28, ?",["24","26","30","56"],1,"On alterne × 2 et − 2."]]],
-["Lettres et codes","Suites alphabétiques, décalages, codage",[
-["B, D, F, H, ?",["I","J","K","L"],1,"On avance de 2 lettres."],
-["Z, X, V, T, ?",["S","R","Q","P"],1,"On recule de 2 lettres."],
-["AZ, BY, CX, ?",["DV","DW","EW","DX"],1,"La première lettre avance, la seconde recule."],
-["Si CHAT s’écrit DIBU, comment s’écrit LOI ?",["MPJ","MOJ","LPJ","MPK"],0,"Chaque lettre est décalée d’un cran vers l’avant."],
-["Quelle lettre est au milieu entre C et K ?",["F","G","H","I"],1,"C est la 3e lettre, K la 11e : le milieu est la 7e, G."]]],
-["Raisonnement logique","Déductions, ordres, syllogismes",[
-["Tous les juristes sont diplômés. Awa est juriste. Donc :",["Awa est diplômée","Awa n’est pas diplômée","Tous les diplômés sont juristes","On ne peut pas savoir"],0,"Awa appartient au groupe des juristes, donc elle est diplômée."],
-["Tous les magistrats sont juristes. Moussa est juriste. Alors :",["Moussa est magistrat","Moussa n’est pas magistrat","On ne peut pas conclure","Moussa n’est pas juriste"],2,"Être juriste n’implique pas d’être magistrat."],
-["A est plus grand que B, et B plus grand que C. Qui est le plus petit ?",["A","B","C","Impossible à dire"],2,"A > B > C : C est le plus petit."],
-["S’il pleut, la route est mouillée. La route n’est pas mouillée. Donc :",["il pleut","il ne pleut pas","on ne peut pas savoir","la route est sèche et il pleut"],1,"Si la conséquence est fausse, la condition l’est aussi."],
-["Ali arrive avant Bineta, et Cheikh arrive après Bineta. Qui arrive en premier ?",["Ali","Bineta","Cheikh","Impossible à dire"],0,"L’ordre est Ali, Bineta, Cheikh."]]]
+["Orthographe et grammaire","Accords, graphies, pièges courants",[]],
+["Vocabulaire","Synonymes, antonymes, paronymes, sens des mots",[]],
+["Analogies et intrus","Relations entre mots, chasse à l’intrus",[]],
+["Calcul et problèmes","Pourcentages, vitesses, proportions, problèmes à étapes",[]],
+["Suites numériques","Trouver la règle, puis le terme suivant",[]],
+["Lettres et codes","Suites alphabétiques, décalages, codage",[]],
+["Raisonnement logique","Déductions, ordres, syllogismes",[]]
 ];
+var NQ=30;
 function sh(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x}return a}
 function ri(a,b){return a+Math.floor(Math.random()*(b-a+1))}
 function pk(a){return a[ri(0,a.length-1)]}
-function f(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'\u202f')}
+function f(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,' ')}
 function mk(q,c,w,e){var o=sh([c].concat(w));return [q,o,o.indexOf(c),e]}
 function near(c){var s=Math.max(2,Math.round(Math.abs(c)*.1)),k=[c+1,c-1,c+s,c-s,c+2*s,c-2*s,c+10,c-10],u=[];sh(k).forEach(function(x){if(x!==c&&x>0&&u.indexOf(x)<0)u.push(x)});return u.slice(0,3).map(f)}
-function many(g,n){var o=[],s={};while(o.length<n){var q=g();if(!s[q[0]]){s[q[0]]=1;o.push(q)}}return o}
+function many(g,n){var o=[],s={},t=0;while(o.length<n&&t++<4000){var q=g();if(!s[q[0]]){s[q[0]]=1;o.push(q)}}return o}
+function H(a){return a.map(function(x){return mk(x[0],x[1],x[2],x[3])})}
 var A='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var ORT="Quel mot est bien orthographié ?",PH="Quelle phrase est correcte ?";
 var EX=[
-[["Quel mot est bien orthographié ?","exagérer",["éxagérer","exagèrer","exaggérer"],"On écrit exagérer."],
-["Quel mot est bien orthographié ?","développement",["dévelopement","dévéloppement","développment"],"Un seul l, deux p."],
-["Quelle phrase est correcte ?","Ils se sont succédé.",["Ils se sont succédés.","Ils se sont succédées.","Ils ce sont succédé."],"Le participe de se succéder reste invariable."],
-["___ étudiants préparent leurs examens.","Ces",["Ses","C’est","S’est"],"Ces est le déterminant démonstratif."],
-["Quel mot est bien orthographié ?","nécessaire",["necessaire","nécéssaire","nècessaire"],"On écrit nécessaire."],
-["Il faut que nous ___ attentifs.","soyons",["sommes","serons","soyions"],"Après « il faut que », on emploie le subjonctif."],
-["Quelle phrase est correcte ?","Les efforts qu’il a fournis.",["Les efforts qu’il a fourni.","Les efforts qu’il a fournit.","Les efforts qu’il a fournies."],"Le COD « que » est avant le verbe : accord au masculin pluriel."],
-["Quel mot est bien orthographié ?","connaissance",["connaissence","conaissance","connaisance"],"Deux n, deux s."],
-["Pluriel de « un travail » :","des travaux",["des travails","des travaus","des travauxs"],"Travail fait travaux au pluriel."],
-["Quelle phrase est correcte ?","Je leur ai parlé.",["Je leurs ai parlé.","Je leur ai parlés.","Je leurs ai parlés."],"Le pronom « leur » est invariable devant un verbe."],
-["Quel mot est bien orthographié ?","irrégulier",["irégulier","irrégullier","irrégulié"],"Deux r après le préfixe ir-."],
-["Les décisions qu’elle a ___ sont justes.","prises",["pris","prise","prisent"],"Le COD « que » est avant le verbe : accord au féminin pluriel."],
-["Quel mot est bien orthographié ?","embarrasser",["embarasser","embarraser","emmbarrasser"],"Deux r, deux s."],
-["Ces filles sont ___.","contentes",["content","contente","contents"],"L’adjectif s’accorde avec le sujet."],
-["Quel mot est bien orthographié ?","accueillir",["acceuillir","accuillir","acueillir"],"On écrit cueill- après ac-."]],
-[["Synonyme de « exhaustif » :","complet",["partiel","fatigant","rapide"],"Un travail exhaustif ne laisse rien de côté."],
-["Antonyme de « laconique » :","bavard",["bref","précis","timide"],"Laconique signifie très bref."],
-["Synonyme de « inéluctable » :","inévitable",["improbable","incertain","facile"],"Ce qui est inéluctable ne peut être évité."],
-["Antonyme de « éphémère » :","durable",["rapide","bref","fragile"],"Éphémère : de courte durée."],
-["Cet homme est ___ dans la région.","éminent",["imminent","immanent","émergent"],"Éminent : remarquable. Imminent : qui va arriver."],
-["Synonyme de « corroborer » :","confirmer",["contredire","ignorer","reporter"],"Corroborer, c’est appuyer par des preuves."],
-["« Ostensible » signifie :","visible, montré",["secret","fragile","lent"],"Ce qui est ostensible se voit nettement."],
-["Antonyme de « véridique » :","mensonger",["sincère","exact","honnête"],"Véridique : conforme à la vérité."],
-["Synonyme de « atermoyer » :","repousser, hésiter",["accélérer","trancher","partir"],"Atermoyer, c’est tarder à décider."],
-["Un « litige » est :","un différend",["un contrat","un rapport","un accord"],"Un litige oppose deux parties."],
-["Le Parlement doit ___ ce traité.","ratifier",["rectifier","ratisser","rarifier"],"Ratifier : approuver officiellement."],
-["Synonyme de « précaire » :","instable",["solide","précis","gratuit"],"Précaire : sans garantie de durée."],
-["Antonyme de « bénéfique » :","nuisible",["utile","favorable","rare"],"Bénéfique : qui fait du bien."],
-["Synonyme de « prérogative » :","privilège",["devoir","interdiction","punition"],"Droit attaché à une fonction."],
-["« Caduc » signifie :","périmé, sans effet",["valable","urgent","secret"],"Un acte caduc a perdu sa validité."]],
-[["Avocat : plaidoirie :: Écrivain : ?","roman",["stylo","lecteur","bureau"],"L’avocat produit une plaidoirie, l’écrivain un roman."],
-["Médecin : hôpital :: Juge : ?","tribunal",["prison","avocat","code"],"Lieu d’exercice du métier."],
-["Quel est l’intrus ?","juillet",["lundi","mardi","jeudi"],"Juillet est un mois, les autres des jours."],
-["Quel est l’intrus ?","carré",["rouge","bleu","vert"],"Carré est une forme, les autres des couleurs."],
-["Quel est l’intrus ?","Paris",["Sénégal","Mali","Niger"],"Paris est une ville, les autres des pays."],
-["Jour : nuit :: Chaud : ?","froid",["soleil","lune","feu"],"Deux paires de contraires."],
-["Main : gant :: Pied : ?","chaussure",["orteil","marche","talon"],"Le gant couvre la main, la chaussure le pied."],
-["Quel est l’intrus ?","rose",["chêne","baobab","manguier"],"La rose n’est pas un arbre."],
-["Eau : soif :: Nourriture : ?","faim",["goût","repas","table"],"L’eau apaise la soif, la nourriture la faim."],
-["Quel est l’intrus ?","boulanger",["gendarme","policier","douanier"],"Les trois autres sont des agents de l’État."],
-["Mot : phrase :: Phrase : ?","texte",["lettre","virgule","ligne"],"Un élément et l’ensemble qu’il compose."],
-["Quel est l’intrus ?","bicyclette",["article","alinéa","chapitre"],"Les trois autres sont des divisions d’un texte."],
-["Livre : lire :: Musique : ?","écouter",["chanter","jouer","bruit"],"Objet et action associée."],
-["Quel est l’intrus ?","roman policier",["Constitution","code pénal","loi organique"],"Les autres sont des textes juridiques."],
-["Roi : couronne :: Juge : ?","robe",["salle","dossier","loi"],"Un signe distinctif porté par la fonction."]]];
-function gCalc(){var k=ri(0,5),a,b,c;
-if(k===0){a=ri(12,48);b=ri(3,9);c=a*b;return mk(a+' × '+b+' =',f(c),near(c),a+' × '+b+' = '+f(c)+'.')}
-if(k===1){var p=pk([10,15,20,25,30,40,60]);b=ri(2,20)*20;c=p*b/100;return mk(p+' % de '+b+' =',f(c),near(c),b+' × '+p+' ÷ 100 = '+f(c)+'.')}
-if(k===2){var v=pk([60,70,80,90,100,120]),h=pk([1.5,2,2.5,3,3.5]);c=v*h;return mk('Une voiture roule à '+v+' km/h pendant '+String(h).replace('.5',' h 30').replace(/^(\d)$/,'$1 h')+'. Distance parcourue ?',f(c)+' km',near(c).map(function(x){return x+' km'}),'Distance = vitesse × temps = '+f(c)+' km.')}
-if(k===3){a=ri(10,30);b=ri(10,30);var d=ri(10,30),m=ri(12,28);c=4*m-a-b-d;if(c<5)return gCalc();return mk('Moyenne de '+a+', '+b+', '+d+' et '+c+' :',String(m),near(m),'Somme '+(4*m)+' ÷ 4 = '+m+'.')}
-if(k===4){a=ri(3,9);var u=ri(2,10)*50;b=ri(10,20);c=b*u;return mk(a+' cahiers coûtent '+f(a*u)+' F. Combien coûtent '+b+' cahiers ?',f(c)+' F',near(c).map(function(x){return x+' F'}),'Un cahier coûte '+f(u)+' F, donc '+b+' × '+f(u)+' = '+f(c)+' F.')}
-a=ri(2,9)*10000;b=pk([2,3,4,5]);c=pk([2,3,4]);var r=a*b*c/100;return mk('Intérêt simple de '+f(a*10)+' F à '+b+' % pendant '+c+' ans :',f(r*10)+' F',near(r*10).map(function(x){return x+' F'}),f(a*10)+' × '+b+' % × '+c+' = '+f(r*10)+' F.')}
-function gSuite(){var k=ri(0,5),s,d,x=[],i;
-if(k===0){s=ri(2,40);d=pk([3,4,5,6,7,8,9,11,12]);for(i=0;i<6;i++)x.push(s+d*i);var e='On ajoute '+d+' à chaque terme.'}
-else if(k===1){s=ri(2,5);d=pk([2,3]);for(i=0;i<6;i++)x.push(s*Math.pow(d,i));e='Chaque terme est multiplié par '+d+'.'}
-else if(k===2){s=ri(1,9);d=ri(1,3);var v=s;for(i=0;i<6;i++){x.push(v);v+=d+i}e='Les écarts augmentent de 1 à chaque étape.'}
-else if(k===3){s=ri(5,30);var a=ri(4,9),b=ri(1,a-1);v=s;for(i=0;i<6;i++){x.push(v);v+=i%2?-b:a}e='On alterne +'+a+' et −'+b+'.'}
-else if(k===4){d=ri(0,3);for(i=1;i<=6;i++)x.push(i*i+d);e='Carrés des entiers'+(d?' plus '+d:'')+'.'}
-else{var p=ri(1,4),q=ri(2,6);x=[p,q];for(i=2;i<6;i++)x.push(x[i-1]+x[i-2]);e='Chaque terme est la somme des deux précédents.'}
-var c=x[5];return mk(x.slice(0,5).join(', ')+', ?',String(c),near(c),e)}
-function gLet(){var k=ri(0,3),s,d,i,x=[];
-if(k===0){d=ri(2,4);s=ri(0,25-5*d);for(i=0;i<6;i++)x.push(A[s+d*i]);return mk(x.slice(0,5).join(', ')+', ?',x[5],sh(A.split('').filter(function(l){return l!==x[5]})).slice(0,3),'On avance de '+d+' lettres à chaque fois.')}
-if(k===1){d=ri(2,4);s=ri(5*d,25);for(i=0;i<6;i++)x.push(A[s-d*i]);return mk(x.slice(0,5).join(', ')+', ?',x[5],sh(A.split('').filter(function(l){return l!==x[5]})).slice(0,3),'On recule de '+d+' lettres à chaque fois.')}
-if(k===2){var w=pk(['DROIT','JUGE','LOI','CODE','ARRET','DOSSIER','TRIBUNAL']),n=ri(1,3);function z(m){return w.split('').map(function(l){return A[A.indexOf(l)+m]}).join('')}
-return mk('Si on décale chaque lettre de '+n+' rang'+(n>1?'s':'')+' vers l’avant, '+w+' devient :',z(n),[z(n+1),z(n===1?2:n-1),z(n+2)].filter(function(v,i,a){return a.indexOf(v)===i}).slice(0,3),'Chaque lettre avance de '+n+' dans l’alphabet.')}
-s=ri(0,15);n=ri(2,8);return mk('Quelle lettre se trouve '+n+' rangs après '+A[s]+' dans l’alphabet ?',A[s+n],sh(A.split('').filter(function(l){return l!==A[s+n]})).slice(0,3),A[s]+' est la lettre n° '+(s+1)+'. On avance de '+n+'.')}
+[
+[PH,"Quelles que soient les raisons qu’il a invoquées, la demande est rejetée.",["Quelque soient les raisons qu’il a invoquées, la demande est rejetée.","Quelles que soient les raisons qu’il a invoqué, la demande est rejetée.","Quel que soient les raisons qu’il a invoquées, la demande est rejetée."],"« Quelles que » s’écrit en deux mots et s’accorde ; le COD « que » est avant le verbe, d’où « invoquées »."],
+["Pluriel de « un chef-lieu » :","des chefs-lieux",["des chef-lieux","des chefs-lieu","des chef-lieu"],"Nom + nom : les deux éléments prennent la marque du pluriel."],
+["Pluriel de « un va-et-vient » :","des va-et-vient",["des vas-et-viens","des va-et-viens","des vas-et-vient"],"Les mots composés comportant un verbe et une conjonction restent invariables."],
+["Pluriel de « un rez-de-chaussée » :","des rez-de-chaussée",["des rez-de-chaussées","des rez-de-chaussés","des rés-de-chaussée"],"Le mot est invariable."],
+[ORT,"dilemme",["dilème","dillemme","dilemne"],"Deux m : dilemme."],
+[ORT,"ressortissant",["ressortisant","resortissant","ressortissan"],"Deux s après re- et deux s après -ti- : ressortissant."],
+[ORT,"acquiescer",["aquiescer","acquièscer","acquiesser"],"Acquiescer s’écrit avec -cqu- et -sc-."],
+[ORT,"pusillanime",["pusilanime","pusillannime","pusilannime"],"Deux l, un seul n : pusillanime."],
+[ORT,"rémunération",["rénumération","rémunnération","remunération"],"Rémunération : é, un seul n après le u."],
+[ORT,"pérennité",["pérenité","pérrennité","perennité"],"Deux n : pérennité."],
+[ORT,"parallèle",["paralèle","parallele","parralèle"],"Deux l, puis un seul l après l’accent : parallèle."],
+[ORT,"mnémotechnique",["mnémotéchnique","mnemotechnique","mnémonotechnique"],"Mnémotechnique s’écrit sans accent sur le e du radical technique."],
+[ORT,"anachronisme",["anachronnisme","anacronisme","anachroniscme"],"Le radical est chron- (le temps)."],
+[ORT,"immixtion",["immixion","imixtion","immiction"],"Immixtion s’écrit avec deux m et -xtion."],
+[ORT,"forfaiture",["forfaitture","fortfaiture","forfèture"],"Forfaiture vient de « forfait » : un seul t."],
+["Je ne pense pas qu’il ___ raison.","ait",["a","aura","aurait"],"Après « ne pas penser que » (phrase négative), on emploie le subjonctif."],
+["Bien qu’ils ___ fatigués, ils continuent.","soient",["sont","seront","étaient"],"« Bien que » est suivi du subjonctif."],
+["Il faut que tu ___ fini avant midi.","aies",["as","ait","auras"],"« Il faut que » appelle le subjonctif : que tu aies."],
+["Les années qu’il a ___ en prison furent longues.","passées",["passé","passés","passée"],"Le COD « que » (les années) est placé avant : accord au féminin pluriel."],
+["Ils se sont ___ des cadeaux.","offert",["offerts","offertes","offerte"],"Le COD « des cadeaux » est après le verbe : le participe reste invariable."],
+["Les enfants que j’ai ___ jouer étaient joyeux.","vus",["vu","vue","vues"],"Les enfants font l’action de jouer : le participe s’accorde."],
+["Les chansons que j’ai ___ chanter étaient belles.","entendu",["entendues","entendus","entendue"],"Les chansons ne chantent pas : elles sont chantées, le participe reste invariable."],
+["Elle s’est ___ à l’hôpital.","rendue",["rendu","rendus","rendues"],"Avec « se rendre », « se » est COD : le participe s’accorde avec le sujet."],
+["Elles se sont ___ longtemps.","parlé",["parlées","parlés","parlée"],"On parle à quelqu’un : « se » est complément indirect, le participe reste invariable."],
+[PH,"Ce sont eux qui ont gagné.",["Ce sont eux qui a gagné.","Ce sont eux qui ont gagnés.","Se sont eux qui ont gagné."],"Le verbe s’accorde avec l’antécédent « eux » (3e personne du pluriel)."],
+[PH,"Quelque difficiles que soient ces épreuves, il réussira.",["Quelques difficiles que soient ces épreuves, il réussira.","Quel que difficiles que soient ces épreuves, il réussira.","Quelles que difficiles que soient ces épreuves, il réussira."],"« Quelque » devant un adjectif, au sens de « si… que », est invariable."],
+[PH,"Les témoins se sont tus.",["Les témoins se sont tut.","Les témoins se sont tues.","Les témoins se sont tû."],"Le participe de se taire est tu, tus : il s’accorde avec le sujet."],
+[PH,"Quoi qu’il arrive, nous resterons.",["Quoiqu’il arrive, nous resterons.","Quoi qu’il arrivent, nous resterons.","Quoique qu’il arrive, nous resterons."],"« Quoi que » en deux mots signifie « quelle que soit la chose que »."],
+["Quelle phrase est correcte ?","Des centaines de personnes sont venues.",["Des centaines de personnes est venue.","Des centaines de personnes sont venu.","Des centaines de personnes est venues."],"Le verbe s’accorde au pluriel avec « des centaines » ; « venues » s’accorde avec le sujet."],
+["Quelle phrase contient une faute ?","Les lois que le Parlement a voté sont claires.",["Les lois que le Parlement a votées sont claires.","Le Parlement a voté ces lois.","Ces lois, il les a votées."],"Le COD « que » est avant le verbe : on écrit « votées »."]
+],
+[
+["Synonyme de « prolixe » :","verbeux",["concis","timide","sévère"],"Prolixe : qui s’exprime avec trop de mots."],
+["Antonyme de « ténu » :","épais",["fin","mince","subtil"],"Ténu : très mince, très fin."],
+["Synonyme de « fallacieux » :","trompeur",["solide","tardif","bref"],"Un argument fallacieux cherche à induire en erreur."],
+["Les deux entreprises sont accusées de ___ pour fausser la concurrence.","collusion",["collision","collocation","collation"],"La collusion est une entente secrète au détriment d’un tiers."],
+["Il a été ___ de ses fonctions.","révoqué",["invoqué","évoqué","convoqué"],"Révoquer : destituer."],
+["Synonyme de « inique » :","injuste",["sévère","tardif","rare"],"Inique : contraire à l’équité."],
+["Antonyme de « prodigue » :","économe",["généreux","riche","bavard"],"Prodigue : qui dépense sans compter."],
+["Une clause « léonine » est une clause :","qui avantage excessivement une seule partie",["écrite en latin","facultative","tenue secrète"],"Léonine : la part du lion revient à un seul contractant."],
+["Synonyme de « obtempérer » :","obéir",["protester","hésiter","punir"],"Obtempérer, c’est se soumettre à un ordre."],
+["« Déférer à une injonction » signifie :","s’y conformer",["la contester","l’annuler","la différer"],"Déférer à : se soumettre à."],
+["Antonyme de « exogène » :","endogène",["externe","tardif","gênant"],"Exogène : d’origine extérieure ; endogène : d’origine interne."],
+["« Apocryphe » se dit d’un texte :","dont l’authenticité est douteuse",["très ancien","tenu secret","solennel"],"Apocryphe : attribué à un auteur sans preuve."],
+["Un propos « sibyllin » est :","obscur, énigmatique",["agressif","très technique","trop familier"],"Comme les oracles de la Sibylle."],
+["Synonyme de « circonspect » :","prudent",["bavard","distrait","courageux"],"Circonspect : qui agit avec réserve."],
+["Antonyme de « pusillanime » :","courageux",["prudent","bavard","naïf"],"Pusillanime : qui manque de courage."],
+["Une « peccadille » est :","une faute légère",["une grande faute","une petite somme","une maladie bénigne"],"Peccadille : faute sans gravité."],
+["« Aliéner » un bien signifie :","le céder",["l’acquérir","le louer","le perdre par vol"],"Aliéner : transférer la propriété."],
+["Synonyme de « mansuétude » :","indulgence",["sévérité","richesse","lenteur"],"La mansuétude est une douceur à pardonner."],
+["Antonyme de « prolifique » :","stérile",["fécond","productif","savant"],"Prolifique : très productif."],
+["« Ambivalent » signifie :","qui présente deux aspects opposés",["qui hésite longtemps","qui parle deux langues","qui est ambitieux"],"Ambivalent : à la fois positif et négatif."],
+["Synonyme de « ostracisme » :","exclusion",["accueil","éloge","amende"],"Ostracisme : mise à l’écart d’une personne."],
+["Synonyme de « obsolète » :","dépassé",["obligatoire","douteux","oublieux"],"Obsolète : qui n’est plus en usage."],
+["Synonyme de « onéreux » :","coûteux",["pénible","gratuit","ancien"],"Un contrat à titre onéreux se fait contre paiement."],
+["Synonyme de « spoliation » :","dépossession",["restitution","héritage","vente"],"Spolier : dépouiller de ce qu’on possède."],
+["Synonyme de « affable » :","aimable, courtois",["faible","paresseux","fier"],"Affable : d’un abord agréable."],
+["Antonyme de « abscons » :","clair",["obscur","savant","compliqué"],"Abscons : difficile à comprendre."],
+["Synonyme de « corollaire » :","conséquence logique",["contradiction","préambule","exception"],"Corollaire : proposition qui découle d’une autre."],
+["Synonyme de « arguer » :","prétexter",["accuser","hésiter","renoncer"],"Arguer de : tirer argument de."],
+["Synonyme de « délétère » :","nuisible",["léger","utile","discret"],"Délétère : nocif pour la santé ou le moral."],
+["Ce mot a plusieurs ___.","acceptions",["acceptations","acceptances","acceptiens"],"Une acception est le sens d’un mot."]
+],
+[
+["Bailleur : loyer :: Salarié : ?","salaire",["contrat","patron","travail"],"Chacun perçoit la rémunération de ce qu’il fournit."],
+["Médecin : ordonnance :: Juge : ?","jugement",["tribunal","audience","code"],"L’acte produit par la fonction."],
+["Quel est l’intrus ?","assignation",["appel","pourvoi","opposition"],"Les trois autres sont des voies de recours ; l’assignation ouvre un procès."],
+["Quel est l’intrus ?","peine",["crime","délit","contravention"],"Crime, délit et contravention sont les trois catégories d’infractions."],
+["Quel est l’intrus ?","créance",["propriété","usufruit","servitude"],"Les trois autres sont des droits réels, la créance est un droit personnel."],
+["Temps : horloge :: Température : ?","thermomètre",["chaleur","degré","météo"],"L’instrument qui mesure."],
+["Alphabet : lettre :: Loi : ?","article",["décret","juge","code"],"L’élément de base qui compose l’ensemble."],
+["Ouvrir : fermer :: Ratifier : ?","dénoncer",["signer","négocier","proposer"],"Un traité se ratifie, et peut se dénoncer."],
+["Peur : panique :: Colère : ?","fureur",["joie","calme","tristesse"],"Même sentiment, intensité maximale."],
+["Quel est l’intrus ?","maire",["préfet","gouverneur","sous-préfet"],"Le maire est élu ; les trois autres sont nommés."],
+["Quel est l’intrus ?","jurisprudence",["Constitution","loi organique","décret"],"La jurisprudence vient des juges ; les autres sont des textes."],
+["Pilote : cockpit :: Chirurgien : ?","bloc opératoire",["ambulance","pharmacie","clinique"],"Le lieu précis où se fait l’acte."],
+["Quel est l’intrus ?","hectare",["kilomètre","mètre","millimètre"],"L’hectare mesure une surface, les autres des longueurs."],
+["Antérieur : postérieur :: Avant : ?","après",["pendant","jamais","toujours"],"Relation de contraires dans le temps."],
+["Cause : effet :: Prémisse : ?","conclusion",["hypothèse","preuve","question"],"La prémisse conduit à la conclusion."],
+["Tribunal : chambre :: Pays : ?","région",["capitale","frontière","peuple"],"Une subdivision."],
+["Pluie : parapluie :: Soleil : ?","parasol",["lunettes","chapeau","ombre"],"L’objet qui protège de l’élément."],
+["Quel est l’intrus ?","Côte d’Ivoire",["Mauritanie","Mali","Guinée-Bissau"],"Les trois autres sont voisins du Sénégal."],
+["Quel est l’intrus ?","Touba",["Louga","Matam","Fatick"],"Touba est une ville, les autres sont des régions."],
+["Quel est l’intrus ?","Lamine Guèye",["Léopold Sédar Senghor","Abdou Diouf","Macky Sall"],"Les trois autres ont été présidents de la République."],
+["Radar : détecter :: Boussole : ?","s’orienter",["mesurer","écouter","calculer"],"L’instrument et sa fonction."],
+["Quel est l’intrus ?","tonne",["watt","kilowatt","mégawatt"],"La tonne mesure une masse ; les autres une puissance."],
+["Procès : jugement :: Élection : ?","résultat",["bulletin","isoloir","campagne"],"L’aboutissement de la procédure."],
+["Débiteur : dette :: Créancier : ?","créance",["paiement","contrat","intérêt"],"Chacun est titulaire du côté de l’obligation qui le concerne."],
+["Prêt : emprunt :: Vente : ?","achat",["prix","marché","vendeur"],"Le même acte vu de l’autre côté."],
+["Oligarchie : quelques-uns :: Démocratie : ?","peuple",["roi","armée","richesse"],"Qui détient le pouvoir."],
+["Quel est l’intrus ?","médiatique",["législatif","exécutif","judiciaire"],"Les trois autres sont les pouvoirs de l’État."],
+["Capitaine : navire :: Maire : ?","commune",["pays","préfecture","conseil"],"Celui qui dirige, et ce qu’il dirige."],
+["Quel est l’intrus ?","hyène",["lion","léopard","guépard"],"Les trois autres sont des félins."],
+["Quel est l’intrus ?","chimie",["géométrie","arithmétique","trigonométrie"],"Les trois autres sont des branches des mathématiques."]
+]
+];
+var LOG=[
+["Tous les lions sont des félins. Aucun félin n’est un oiseau. Donc :","aucun lion n’est un oiseau",["tous les oiseaux sont des lions","certains lions sont des oiseaux","on ne peut rien conclure"],"X inclus dans Y, et Y sans rapport avec Z : X n’a rien à voir avec Z."],
+["Certains juristes sont avocats. Tous les avocats sont diplômés. Donc :","certains juristes sont diplômés",["tous les juristes sont diplômés","aucun juriste n’est diplômé","tous les diplômés sont juristes"],"Au moins un juriste est avocat, donc diplômé."],
+["Tous les chênes sont des arbres. Certains végétaux sont des chênes. Donc :","certains végétaux sont des arbres",["tous les végétaux sont des arbres","aucun végétal n’est un arbre","tous les arbres sont des chênes"],"Parmi les végétaux, les chênes sont des arbres."],
+["Tous les magistrats sont juristes. Tous les avocats sont juristes. Donc :","on ne peut pas conclure que les avocats sont magistrats",["tous les avocats sont magistrats","aucun avocat n’est magistrat","tous les juristes sont avocats"],"Deux groupes inclus dans un même ensemble ne sont pas forcément liés."],
+["Aucun mammifère n’est un poisson. Tous les dauphins sont des mammifères. Donc :","aucun dauphin n’est un poisson",["certains dauphins sont des poissons","tous les poissons sont des dauphins","on ne peut rien conclure"],"Le dauphin hérite de la propriété de sa catégorie."],
+["Si le contrat est nul, il ne produit aucun effet. Ce contrat produit des effets. Donc :","il n’est pas nul",["il est nul","on ne peut pas savoir","il est annulable"],"Contraposée : si des effets existent, il n’est pas nul."],
+["Si l’accusé est coupable, il sera condamné. L’accusé n’est pas condamné. Donc :","il n’est pas coupable",["il est coupable","on ne peut pas savoir","il sera condamné plus tard"],"Contraposée de la règle."],
+["Si tu travailles, tu réussiras. Tu n’as pas réussi. Donc :","tu n’as pas travaillé",["tu as travaillé","tu n’as pas assez travaillé mais tu travailleras","on ne peut rien dire"],"Si la conséquence est fausse, la condition est fausse."],
+["Si tu travailles, tu réussiras. Tu as réussi. Donc :","on ne peut pas savoir si tu as travaillé",["tu as travaillé","tu n’as pas travaillé","tu as triché"],"Réussir peut avoir d’autres causes : on ne peut pas remonter à la condition."],
+["Awa dit : « Bineta ment ». Bineta dit : « Nous disons toutes les deux la vérité ». Qui dit la vérité ?","Awa seule",["Bineta seule","les deux","aucune des deux"],"Si Bineta disait vrai, Awa aussi, mais Awa dit que Bineta ment : contradiction. Donc Bineta ment, et le propos d’Awa est vrai."],
+["Moussa est le frère de Fatou. Fatou est la mère de Cheikh. Quel est le lien entre Moussa et Cheikh ?","oncle",["père","cousin","grand-père"],"Le frère de la mère est l’oncle."],
+["Ibrahima est le fils du frère de Mariama. Quel est le lien entre Mariama et Ibrahima ?","tante",["mère","cousine","grand-mère"],"Mariama est la tante d’Ibrahima."]
+];
+function ordF(){var n=sh(['Awa','Moussa','Bineta','Cheikh','Fatou','Ibrahima','Mariama','Ousmane']).slice(0,4),
+c=[n[1]+' arrive après '+n[0]+'.',n[3]+' arrive après '+n[2]+'.',n[2]+' arrive après '+n[1]+'.'];
+sh(c);var k=ri(1,3);
+var lab=['en 2e position','en 3e position','en dernière position'][k-1];
+var a=n[k];return mk(c.join(' ')+' Qui arrive '+lab+' ?',a,n.filter(function(x){return x!==a}),'L’ordre est : '+n.join(', ')+'.')}
+function W3(c,l,fm){var u=[],s=Math.max(1,Math.round(Math.abs(c)*.1)),k=1;l.forEach(function(x){if(x!==c&&x>0&&u.indexOf(x)<0)u.push(x)});while(u.length<3){[c+k*s,c-k*s].forEach(function(x){if(u.length<3&&x!==c&&x>0&&u.indexOf(x)<0)u.push(x)});k++}return u.slice(0,3).map(fm||String)}
+function U3(g,l){var u=[];l.forEach(function(x){if(x!==g&&u.indexOf(x)<0)u.push(x)});return u.slice(0,3)}
+function fd(x){return String(Math.round(x*100)/100).replace('.',',')}
+function gCalc(){var k=ri(0,9),a,b,c,p,q,t;
+if(k===0){a=ri(23,89);b=ri(12,29);c=a*b;return mk(a+' × '+b+' =',f(c),near(c),a+' × '+b+' = '+f(c)+'.')}
+if(k===1){var P=ri(2,20)*10000;p=pk([10,20,25,30]);q=pk([10,20,25]);if(p===q)return gCalc();c=P/10000*(100+p)*(100-q);var e=P*(100+p-q)/100;return mk('Un prix de '+f(P)+' F augmente de '+p+' %, puis baisse de '+q+' %. Prix final ?',f(c)+' F',W3(c,[P,e,P+P/10],function(x){return f(x)+' F'}),f(P)+' × '+(100+p)/100+' × '+(100-q)/100+' = '+f(c)+' F.')}
+if(k===2){var S=pk([[60,40,48],[30,60,40],[60,90,72],[20,30,24],[50,75,60],[30,45,36],[60,120,80],[40,120,60]]);return mk('Un trajet aller se fait à '+S[0]+' km/h, le retour (même distance) à '+S[1]+' km/h. Vitesse moyenne sur l’ensemble ?',S[2]+' km/h',W3(S[2],[(S[0]+S[1])/2,S[2]+7,S[2]-6],function(x){return fd(x)+' km/h'}),'Vitesse moyenne = 2 × '+S[0]+' × '+S[1]+' ÷ ('+S[0]+' + '+S[1]+') = '+S[2]+' km/h.')}
+if(k===3){var W=pk([[12,6,4],[10,15,6],[20,30,12],[12,4,3],[24,8,6],[18,9,6],[20,5,4],[30,20,12],[60,30,20]]);return mk('Un robinet remplit un bassin en '+W[0]+' h, un second en '+W[1]+' h. Ouverts ensemble, en combien d’heures le remplissent-ils ?',W[2]+' h',W3(W[2],[(W[0]+W[1])/2,W[2]+2,W[2]*2],function(x){return fd(x)+' h'}),'1/'+W[0]+' + 1/'+W[1]+' = 1/'+W[2]+' : le bassin se remplit en '+W[2]+' h.')}
+if(k===4){a=ri(2,5);b=ri(2,5);c=ri(1,4);if(a===b||b===c||a===c)return gCalc();t=(a+b+c)*ri(2,12)*100;var u=t/(a+b+c);return mk('Un héritage de '+f(t)+' F est partagé en proportion '+a+' : '+b+' : '+c+'. Part du deuxième ?',f(b*u)+' F',W3(b*u,[a*u,c*u,Math.round(t/3)],function(x){return f(x)+' F'}),'Une part vaut '+f(t)+' ÷ '+(a+b+c)+' = '+f(u)+' F ; le deuxième reçoit '+b+' parts.')}
+if(k===5){var n1=ri(1,4)*5,n2=ri(1,4)*5,m1=ri(8,16),m2=ri(8,16),g=0;while(((n1*m1+n2*m2)%(n1+n2)!==0||m1===m2)&&g<500){m1=ri(8,16);m2=ri(8,16);g++}if(m1===m2||(n1*m1+n2*m2)%(n1+n2)!==0)return gCalc();c=(n1*m1+n2*m2)/(n1+n2);return mk('Dans un groupe, '+n1+' étudiants ont une moyenne de '+m1+' et '+n2+' autres une moyenne de '+m2+'. Moyenne générale ?',String(c),W3(c,[(m1+m2)/2,c+1,c-1],fd),'('+n1+' × '+m1+' + '+n2+' × '+m2+') ÷ '+(n1+n2)+' = '+c+'.')}
+if(k===6){var C=ri(1,5)*100000;t=pk([5,10,20]);c=Math.round(C*Math.pow(1+t/100,2));var s2=C*(1+2*t/100);return mk(f(C)+' F sont placés à '+t+' % en intérêts composés pendant 2 ans. Valeur finale ?',f(c)+' F',W3(c,[s2,c+C/10,c-C/10],function(x){return f(x)+' F'}),C+' × (1 + '+t/100+')² = '+f(c)+' F.')}
+if(k===7){var V=pk([20,40,60,80]);p=pk([20,25,30,40]);q=pk([10,15,20]);if(q>=p||(V*p)%q!==0)return gCalc();c=V*p/q-V;return mk('Un mélange de '+V+' L contient '+p+' % d’alcool. Combien de litres d’eau faut-il ajouter pour descendre à '+q+' % ?',c+' L',W3(c,[V*p/q,V-c,c+5],function(x){return x+' L'}),'Alcool pur : '+V*p/100+' L. Volume final : '+(V*p/q)+' L. On ajoute '+c+' L.')}
+if(k===8){var x=ri(5,30);a=ri(2,6);b=ri(3,40);c=a*x+b;return mk('Le nombre multiplié par '+a+', puis augmenté de '+b+', donne '+c+'. Quel est ce nombre ?',String(x),W3(x,[x+1,x-1,x+2,x-2]),a+'x + '+b+' = '+c+' donc x = '+x+'.')}
+var Q=ri(2,20)*10000;p=pk([10,20,25,30,40]);c=Q*(100-p)/100;return mk('Après une remise de '+p+' %, un article coûte '+f(c)+' F. Quel était son prix initial ?',f(Q)+' F',W3(Q,[Math.round(c*(100+p)/100),c+p*Q/1000,Q+Q/10],function(x){return f(x)+' F'}),'Prix initial = '+f(c)+' ÷ '+(100-p)/100+' = '+f(Q)+' F.')}
+function gLetC(){var w=pk(['DROIT','JUGE','LOI','CODE','ARRET','DOSSIER','TRIBUNAL','APPEL']),n=ri(3,9),fw=Math.random()<.5;function z(m){return w.split('').map(function(l){return A[(A.indexOf(l)+m+26)%26]}).join('')}
+var sg=fw?1:-1,good=z(sg*n);return mk('Si on décale chaque lettre de '+n+' rangs '+(fw?'vers l’avant':'vers l’arrière')+' (l’alphabet est circulaire), '+w+' devient :',good,U3(good,[z(-sg*n),z(sg*(n+1)),z(sg*(n-1)),z(sg*(n+2)),z(sg*(n-2))]),'Chaque lettre est décalée de '+n+' rangs '+(fw?'vers l’avant':'vers l’arrière')+', en repartant de l’autre bout si nécessaire.')}
+function gDir(){var T=pk([[3,4,5],[4,3,5],[6,8,10],[8,6,10],[5,12,13],[12,5,13]]),dl=T[1],Nn=dl+ri(1,8),Sd=Nn-dl,c=T[2];
+return mk('Cheikh marche '+Nn+' km vers le nord, puis '+T[0]+' km vers l’est, puis '+Sd+' km vers le sud. À quelle distance de son point de départ se trouve-t-il ?',c+' km',W3(c,[dl+T[0],Nn+T[0]+Sd,c+2,c-1],function(x){return x+' km'}),'Il est à '+dl+' km au nord et '+T[0]+' km à l’est : √('+dl+'² + '+T[0]+'²) = '+c+' km.')}
+function gSuite(){var k=ri(0,7),x=[],i,s,d,e,c,sh2;
+if(k===0){s=ri(2,30);d=ri(2,9);var t=ri(60,99),d2=ri(2,9);for(i=0;i<4;i++){x.push(s+d*i);x.push(t-d2*i)}c=s+d*4;e='Deux suites entrelacées : +'+d+' en positions impaires, −'+d2+' en positions paires.';return mk(x.join(', ')+', ?',String(c),near(c),e)}
+if(k===1){s=ri(1,8);d=ri(1,3);var m=ri(1,3),v=s;for(i=0;i<6;i++){x.push(v);v+=d+m*i}c=x[5];e='Les écarts valent '+(d)+', '+(d+m)+', '+(d+2*m)+'… : ils augmentent de '+m+' à chaque étape.';return mk(x.slice(0,5).join(', ')+', ?',String(c),near(c),e)}
+if(k===2){s=ri(1,4);var r=pk([2,3]),a=pk([-1,1,2]);v=s;for(i=0;i<5;i++){x.push(v);v=v*r+a}c=x[4];x=x.slice(0,4);e='On multiplie par '+r+' puis on '+(a>0?'ajoute ':'retranche ')+Math.abs(a)+'.';return mk(x.join(', ')+', ?',String(c),near(c),e)}
+if(k===3){var T=pk([['n² + n',function(n){return n*n+n}],['n³',function(n){return n*n*n}],['n² − 1',function(n){return n*n-1}],['2n² ',function(n){return 2*n*n}]]),o=ri(1,3);for(i=0;i<5;i++)x.push(T[1](i+o));c=T[1](5+o);e='Le terme de rang n est '+T[0]+' (ici n commence à '+o+').';return mk(x.join(', ')+', ?',String(c),near(c),e)}
+if(k===4){var a1=ri(1,3),b1=ri(1,4),c1=ri(2,5);x=[a1,b1,c1];for(i=3;i<7;i++)x.push(x[i-1]+x[i-2]+x[i-3]);c=x[6];e='Chaque terme est la somme des trois précédents.';return mk(x.slice(0,6).join(', ')+', ?',String(c),near(c),e)}
+if(k===5){s=ri(2,5);var mm=pk([2,3]),aa=ri(2,5);v=s;for(i=0;i<7;i++){x.push(v);v=i%2?v+aa:v*mm}c=x[6];e='On alterne × '+mm+' et + '+aa+'.';return mk(x.slice(0,6).join(', ')+', ?',String(c),near(c),e)}
+if(k===6){var pr=[2,3,5,7,11,13,17,19,23,29,31,37,41],o2=ri(0,5);x=pr.slice(o2,o2+6);c=pr[o2+6];e='Ce sont des nombres premiers consécutifs.';return mk(x.join(', ')+', ?',String(c),near(c),e)}
+s=ri(1,9);v=s;for(i=0;i<6;i++){x.push(v);v+=(i+1)*(i+1)}c=x[5];e='On ajoute successivement 1, 4, 9, 16, 25 : les carrés des entiers.';return mk(x.slice(0,5).join(', ')+', ?',String(c),near(c),e)}
+function gLet(){var k=ri(0,5),s,d,i,x=[],c;
+if(k===0){d=ri(1,2);s=ri(0,8);var v=s;for(i=0;i<6;i++){x.push(A[v]);v+=d+i}c=x[5];return mk(x.slice(0,5).join(', ')+', ?',c,sh(A.split('').filter(function(l){return l!==c})).slice(0,3),'Les sauts augmentent de 1 : +'+d+', +'+(d+1)+', +'+(d+2)+'…')}
+if(k===1){s=ri(0,8);d=ri(1,3);var t=ri(17,25),d2=ri(1,3);for(i=0;i<3;i++){x.push(A[s+d*i]);x.push(A[t-d2*i])}c=A[s+d*3];return mk(x.join(', ')+', ?',c,sh(A.split('').filter(function(l){return l!==c})).slice(0,3),'Deux suites entrelacées : on avance de '+d+' (rangs impairs), on recule de '+d2+' (rangs pairs).')}
+if(k===2)return gLetC();
+if(k===3){var a=ri(1,12),b=ri(2,13);var sum=a+b;if(sum>26)return gLet();c=A[sum-1];return mk('Quelle lettre a pour rang la somme des rangs de '+A[a-1]+' et '+A[b-1]+' ? (A = 1, B = 2, …)',c,sh(A.split('').filter(function(l){return l!==c})).slice(0,3),A[a-1]+' = '+a+', '+A[b-1]+' = '+b+' ; '+a+' + '+b+' = '+sum+' = '+c+'.')}
+if(k===4){var W2=pk(['LOI','JUGE','DROIT','CODE','TEXTE','ACTE','FAIT','PEINE']),val=0;W2.split('').forEach(function(l){val+=A.indexOf(l)+1});return mk('Avec A = 1, B = 2, …, Z = 26, quelle est la valeur du mot '+W2+' (somme de ses lettres) ?',String(val),near(val).map(String).slice(0,3),W2.split('').map(function(l){return A.indexOf(l)+1}).join(' + ')+' = '+val+'.')}
+s=ri(0,25);c=A[25-s];return mk('Dans l’alphabet, la lettre symétrique de '+A[s]+' (A↔Z, B↔Y, C↔X, …) est :',c,sh(A.split('').filter(function(l){return l!==c&&l!==A[s]})).slice(0,3),A[s]+' est la lettre n° '+(s+1)+' ; sa symétrique est la n° '+(26-s)+' : '+c+'.')}
 var N=['Awa','Moussa','Bineta','Cheikh','Fatou','Ibrahima','Mariama','Ousmane'];
-function gLog(){var k=ri(0,3),n=sh(N.slice()).slice(0,3),w;
-if(k===0){var big=Math.random()<.5;return mk(n[0]+' est '+(big?'plus grand(e)':'plus âgé(e)')+' que '+n[1]+', et '+n[1]+' l’est plus que '+n[2]+'. Qui est le plus '+(big?'petit(e)':'jeune')+' ?',n[2],[n[0],n[1],'Impossible à dire'],'L’ordre est '+n[0]+' > '+n[1]+' > '+n[2]+'.')}
-if(k===1){var P=pk([['juristes','diplômé(e)s'],['magistrats','juristes'],['avocats','juristes'],['étudiants','inscrit(e)s']]);var ok=Math.random()<.5;
-if(ok)return mk('Tous les '+P[0]+' sont '+P[1]+'. '+n[0]+' est '+P[0].replace(/s$/,'')+'. Donc :',n[0]+' est '+P[1].replace('(e)s','(e)'),[n[0]+' n’est pas '+P[1].replace('(e)s','(e)'),'Tous les '+P[1]+' sont '+P[0],'On ne peut pas conclure'],'Le groupe des '+P[0]+' est inclus dans celui des '+P[1]+'.');
-return mk('Tous les '+P[0]+' sont '+P[1]+'. '+n[0]+' est '+P[1].replace('(e)s','(e)')+'. Alors :','On ne peut pas conclure',[n[0]+' est '+P[0].replace(/s$/,''),n[0]+' n’est pas '+P[0].replace(/s$/,''),n[0]+' n’est pas '+P[1].replace('(e)s','(e)')],'Être '+P[1]+' n’implique pas d’être '+P[0].replace(/s$/,'')+'.')}
-if(k===2){var a=ri(3,9),b=ri(10,20),c=ri(2,6);return mk(n[0]+' a '+a+' ans de plus que '+n[1]+'. '+n[1]+' a '+b+' ans. Quel sera l’âge de '+n[0]+' dans '+c+' ans ?',String(a+b+c),near(a+b+c),b+' + '+a+' + '+c+' = '+(a+b+c)+'.')}
-return mk('S’il pleut, la route est mouillée. La route n’est pas mouillée. Donc :','il ne pleut pas',['il pleut','on ne peut pas savoir','la route est sèche et il pleut'],'Si la conséquence est fausse, la condition l’est aussi.')}
-R[0][2]=R[0][2].concat(EX[0].map(function(x){return mk(x[0],x[1],x[2],x[3])}));
-R[1][2]=R[1][2].concat(EX[1].map(function(x){return mk(x[0],x[1],x[2],x[3])}));
-R[2][2]=R[2][2].concat(EX[2].map(function(x){return mk(x[0],x[1],x[2],x[3])}));
-R[3][2]=R[3][2].concat(many(gCalc,15));R[4][2]=R[4][2].concat(many(gSuite,15));
-R[5][2]=R[5][2].concat(many(gLet,15));R[6][2]=R[6][2].concat(many(gLog,15));
+function gDay(){var J=['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'],d1=ri(3,12),j=ri(0,6),d2=d1+ri(9,29),c=J[(j+(d2-d1))%7];return mk('Si le '+d1+' d’un mois est un '+J[j]+', quel jour de la semaine est le '+d2+' du même mois ?',c,sh(J.filter(function(x){return x!==c})).slice(0,3),(d2-d1)+' jours plus tard : '+(d2-d1)+' = '+Math.floor((d2-d1)/7)+' × 7 + '+((d2-d1)%7)+', on avance de '+((d2-d1)%7)+' jour(s).')}
+function gAge(){var n=ri(2,6),b=ri(n+3,n+14),a=3*(b-n)+n,S=a+b;return mk('Il y a '+n+' ans, Awa avait trois fois l’âge de Bineta. Aujourd’hui, à elles deux, elles ont '+S+' ans. Quel est l’âge actuel d’Awa ?',String(a),near(a).map(String),'Bineta a '+b+' ans, Awa en a '+a+' : il y a '+n+' ans, '+(a-n)+' = 3 × '+(b-n)+' ; et '+a+' + '+b+' = '+S+'.')}
+function gDir(){var T=pk([[3,4,5],[4,3,5],[6,8,10],[8,6,10],[5,12,13],[12,5,13]]),dl=T[1],Nn=dl+ri(1,8),Sd=Nn-dl,c=T[2],pa=pk(['nord','sud']);
+return mk('Cheikh marche '+Nn+' km vers le nord, puis '+T[0]+' km vers l’est, puis '+Sd+' km vers le sud. À quelle distance de son point de départ se trouve-t-il ?',c+' km',[(dl+T[0])+' km',(Nn+T[0]+Sd)+' km',(c+2)+' km'].filter(function(x,i,s){return s.indexOf(x)===i&&x!==c+' km'}).concat([(c-1)+' km']).slice(0,3),'Il est à '+dl+' km au nord et '+T[0]+' km à l’est : √('+dl+'² + '+T[0]+'²) = '+c+' km.')}
+function gLog(){var k=ri(0,3);if(k===0)return ordF();if(k===1)return gDay();if(k===2)return gAge();return gDir()}
+R[0][2]=H(EX[0]);R[1][2]=H(EX[1]);R[2][2]=H(EX[2]);
+R[3][2]=many(gCalc,NQ);R[4][2]=many(gSuite,NQ);R[5][2]=many(gLet,NQ);
+R[6][2]=H(LOG).concat(many(gLog,NQ-LOG.length));
+R.forEach(function(r){if(r[2].length>NQ)r[2]=r[2].slice(0,NQ)});
 var box=document.getElementById('qz');if(!box)return;
 var best={},cur,i,score,t0,tick;
 function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
@@ -793,7 +842,7 @@ R.forEach(function(r,n){var b=el('button','rb-c');b.type='button';
 b.appendChild(el('strong',0,r[0]));b.appendChild(el('span',0,r[1]));
 b.appendChild(el('em',0,best[n]!=null?'Meilleur score : '+best[n]+' / '+r[2].length:r[2].length+' questions'));
 b.onclick=function(){start(n)};g.appendChild(b)});box.appendChild(g)}
-function start(n){cur=n;i=0;score=0;t0=Date.now();show()}
+function start(n){cur=n;i=0;score=0;t0=Date.now();sh(R[n][2]);show()}
 function show(){
 var Q=R[cur][2],q=Q[i];box.textContent='';
 var top=el('div','qz-top');top.appendChild(el('span',0,R[cur][0]+' · '+(i+1)+' / '+Q.length));

@@ -135,7 +135,7 @@ nav{gap:16px!important}
 #lxs button{width:100%;text-align:left;font:inherit;color:var(--mut);background:none;border:0;border-radius:8px;padding:11px 14px;cursor:pointer}
 #lxs button strong{color:var(--gold2)}
 #lxs button:hover,#lxs button.on{background:rgba(212,168,67,.16);color:var(--ink)}
-@media(max-width:1180px){nav{display:none!important}.menu{display:block;position:relative;margin-left:auto;margin-right:10px}.menu summary{list-style:none;cursor:pointer;padding:8px 14px;border:1px solid var(--line);border-radius:8px;font-size:14px}.menu summary::-webkit-details-marker{display:none}.menu div{position:absolute;right:0;top:46px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:8px;display:grid;min-width:220px}.menu a{padding:11px 14px;text-decoration:none}}
+@media(max-width:1400px){nav{display:none!important}.menu{display:block;position:relative;margin-left:auto;margin-right:10px}.menu summary{list-style:none;cursor:pointer;padding:8px 14px;border:1px solid var(--line);border-radius:8px;font-size:14px}.menu summary::-webkit-details-marker{display:none}.menu div{position:absolute;right:0;top:46px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:8px;display:grid;min-width:220px}.menu a{padding:11px 14px;text-decoration:none}}
 [data-page]{animation:fi .3s ease both}@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 :root[data-theme="light"]{--bg:#f8f5ee;--bg2:#efe9db;--ink:#14203f;--mut:#4b5878;--gold:#b98a22;--gold2:#8a6212;--line:rgba(16,26,58,.2);color-scheme:light}
 [data-theme="light"] header{background:rgba(248,245,238,.94)}
@@ -208,11 +208,42 @@ p.on{font-size:14px;color:var(--mut);border-left:3px solid var(--gold);padding-l
 .vs{margin:14px 0;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:rgba(212,168,67,.08)}.vs strong{font:700 30px "Cormorant Garamond",Georgia,serif;color:var(--gold2)}.vs p{margin:6px 0 0}
 #offb,.x{}.ovl{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:60;display:grid;place-items:center;padding:20px}.ovl-c{background:var(--bg2);color:var(--ink);border:1px solid var(--gold);border-radius:16px;padding:24px;max-width:420px;width:100%}.ovl-c h3{font-size:26px;margin-bottom:12px}.ovl-c ol{margin:0 0 18px;padding-left:20px;color:var(--mut)}.ovl-c li{margin-bottom:8px}
 #offb{position:fixed;left:50%;bottom:78px;transform:translateX(-50%);background:var(--gold);color:#101a3a;padding:8px 16px;border-radius:999px;font-weight:700;font-size:14px;z-index:30;display:none;white-space:nowrap}
+.fv{font:inherit;font-size:22px;line-height:1;background:none;border:0;color:var(--gold2);cursor:pointer;padding:2px 6px}
+article.lx,article.dc{position:relative}article.lx .fv,article.dc .fv{position:absolute;top:8px;right:8px}
+.fx{display:inline-flex;gap:6px;margin-left:12px;vertical-align:middle;font-family:Manrope,system-ui,sans-serif;font-weight:400}.fx .fv{font-size:20px}
+.pfh{display:none}
+.lxt{margin:0 0 18px}
+.es-sec{margin-top:38px;scroll-margin-top:76px}.es-sec .oh{margin-top:0}.oh2{font:700 22px "Cormorant Garamond",Georgia,serif;color:var(--gold2);margin:22px 0 10px}
+.es-card{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0;background:rgba(255,255,255,.04)}.es-card small{color:var(--gold);font-size:13px;text-transform:uppercase;letter-spacing:.06em}.es-card h3,.es-card h4{margin:4px 0 6px;color:var(--gold2)}.es-card h3{font-size:30px}.es-card h4{font-size:22px}.es-card p{margin:0 0 10px;color:var(--mut)}
+.tdj{border-color:var(--gold);background:rgba(212,168,67,.08)}
+.es-card textarea,.es-form input[type=date],.es-sec textarea{width:100%;font:inherit;color:var(--ink);background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:10px;padding:10px 12px;resize:vertical;margin-bottom:8px}.es-form input[type=date]{width:auto}
+.es-form{display:grid;gap:10px;margin-bottom:14px}.ck{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:4px 0;color:var(--ink)}.ck input{width:18px;height:18px;accent-color:var(--gold)}
+.es-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:12px 0}.es-st{border:1px solid var(--line);border-radius:12px;padding:14px;background:rgba(255,255,255,.04);display:grid;gap:2px}.es-st strong{font:700 34px "Cormorant Garamond",Georgia,serif;color:var(--gold2);line-height:1}.es-st span{color:var(--mut);font-size:14px}
+.es-strip{display:flex;gap:5px;margin:0 0 16px}.es-strip span{flex:1;height:22px;border-radius:5px;background:rgba(128,128,128,.25)}.es-strip span.on{background:var(--gold)}
+.es-chart{display:grid;gap:8px}.es-row{display:grid;grid-template-columns:minmax(110px,170px) 1fr 64px;gap:10px;align-items:center;font-size:14px}.es-l{color:var(--mut)}.es-v{text-align:right;color:var(--gold2)}
+.es-tr{position:relative;height:18px;background:rgba(128,128,128,.2);border-radius:9px;overflow:hidden}.es-tr i{position:absolute;left:0;top:0;height:100%;border-radius:9px}.es-tr .b1{background:var(--gold);opacity:.45}.es-tr .b2{background:var(--gold);height:55%;top:22%}
+.lg1{color:var(--gold);opacity:.6}.lg2{color:var(--gold)}
+.es-badges{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}.es-b{border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:3px;opacity:.45;filter:grayscale(1);background:rgba(255,255,255,.03)}.es-b.on{opacity:1;filter:none;border-color:var(--gold);background:rgba(212,168,67,.08)}.es-b .bi{font-size:26px}.es-b small{color:var(--mut);font-size:12.5px;line-height:1.35}
+.es-day{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0;display:grid;gap:4px}.es-day.now{border-color:var(--gold);background:rgba(212,168,67,.08)}.es-day a.qz-x{text-decoration:none;margin-left:4px}
+.ovl.top{align-items:start;padding-top:7vh}.ovl-c.wide{max-width:640px;max-height:84vh;overflow:auto}
+.gsi{width:100%;font:inherit;font-size:18px;color:var(--ink);background:rgba(255,255,255,.07);border:1px solid var(--gold);border-radius:12px;padding:12px 14px}
+.gso{margin-top:12px;display:grid;gap:6px}.gsh{font:700 20px "Cormorant Garamond",Georgia,serif;color:var(--gold2);margin:10px 0 2px}
+.gsr{text-align:left;font:inherit;color:var(--ink);background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;display:grid;gap:2px}.gsr:hover{border-color:var(--gold)}.gsr span{color:var(--mut);font-size:14px}
+.fcard{border:1px solid var(--gold);border-radius:14px;padding:24px 18px;margin:10px 0 14px;text-align:center;background:rgba(212,168,67,.08)}.fcard h3{font-size:34px;color:var(--gold2)}.fdef{margin:14px 0 0;color:var(--ink);text-align:left}
+.cor{margin:14px 0}.cor summary{cursor:pointer;color:var(--gold2);font-weight:700}.cor-i{border-top:1px solid var(--line);padding:10px 0}.cor-i p{margin:4px 0}.ok-t{color:#5fd08a}
+.lecbar{display:none}
+body.lec .lecbar{display:flex;position:fixed;top:10px;right:10px;z-index:70;gap:8px;background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:6px 10px}
+body.lec header,body.lec .bn,body.lec .fab,body.lec #up,body.lec footer,body.lec .final,body.lec .back,body.lec .ena,body.lec .tabs,body.lec .fv,body.lec .fx,body.lec .lxt{display:none!important}
+body.lec{padding-bottom:0;font-size:max(var(--fs,17px),20px)}body.lec main .wrap{max-width:42rem}body.lec main p,body.lec main li,body.lec .fiche{font-family:Georgia,"Times New Roman",serif;line-height:1.9}
+#lec[aria-pressed=true]{outline:2px solid var(--gold)}
+@media(max-width:560px){.es-row{grid-template-columns:90px 1fr 66px}header .sb{padding-inline:8px}header .btn.pri,#lec{display:none}}
+@media print{.fv,.pbtn,.fx,.lecbar,#gs,#lec,.lxt,.ovl{display:none!important}body.pf .fiche>*:not(.pr){display:none!important}body.pf #fiches>.wrap>*:not(.fiche){display:none!important}body.pf .pfh{display:block;font-weight:700;border-bottom:1px solid #000;padding-bottom:6px;margin-bottom:12px}}
+header{z-index:8!important}.menu div{max-height:calc(100vh - 90px);overflow:auto}
 </style></head>
 <body>
 <header><div class="wrap"><a class="brand" href="#/accueil">Le<b>Droit</b>Facile<span class="sn">SN</span></a>
-<nav><a href="#/accueil">Accueil</a><a href="#/apropos">Ce que nous faisons</a><a href="#/orientation">Orientation</a><a href="#/fiches">Exercices juridiques</a><a href="#/lexique">Lexique</a><a href="#/droit">Droit sénégalais</a><a href="#/entrainement">Tests psychotechniques</a><a href="#/faq">Questions</a></nav>
-<details class="menu"><summary>Menu</summary><div><a href="#/accueil">Accueil</a><a href="#/apropos">Ce que nous faisons</a><a href="#/orientation">Orientation</a><a href="#/fiches">Exercices juridiques</a><a href="#/lexique">Lexique juridique</a><a href="#/droit">Droit sénégalais</a><a href="#/entrainement">Tests psychotechniques</a><a href="#/faq">Questions</a></div></details><button class="sb" id="tg" type="button" aria-label="Changer de thème">☀️</button><a class="btn pri" style="padding:9px 18px;font-size:14px" href="#/rejoindre">Rejoindre</a></div></header>
+<nav><a href="#/accueil">Accueil</a><a href="#/apropos">Ce que nous faisons</a><a href="#/orientation">Orientation</a><a href="#/fiches">Exercices juridiques</a><a href="#/lexique">Lexique</a><a href="#/droit">Droit sénégalais</a><a href="#/entrainement">Tests psychotechniques</a><a href="#/faq">Questions</a><a href="#/espace">Mon espace</a></nav>
+<details class="menu"><summary>Menu</summary><div><a href="#/accueil">Accueil</a><a href="#/apropos">Ce que nous faisons</a><a href="#/orientation">Orientation</a><a href="#/fiches">Exercices juridiques</a><a href="#/lexique">Lexique juridique</a><a href="#/droit">Droit sénégalais</a><a href="#/entrainement">Tests psychotechniques</a><a href="#/faq">Questions</a><a href="#/espace">Mon espace</a><a href="javascript:void(0)" class="lecb">👓 Mode lecture</a></div></details><button class="sb" id="gs" type="button" aria-label="Rechercher dans le site" title="Rechercher">🔍</button><button class="sb" id="lec" type="button" aria-label="Mode lecture" aria-pressed="false" title="Mode lecture">👓</button><button class="sb" id="tg" type="button" aria-label="Changer de thème">☀️</button><a class="btn pri" style="padding:9px 18px;font-size:14px" href="#/rejoindre">Rejoindre</a></div></header>
 
 <main id="top"><div class="wrap back" id="back" style="display:none"><a href="#/accueil">← Retour à l’accueil</a></div>
 <div class="hero" data-page="accueil"><div class="wrap">
@@ -283,7 +314,7 @@ p.on{font-size:14px;color:var(--mut);border-left:3px solid var(--gold);padding-l
 <a href="#/fiches"><h3>Exercices juridiques</h3><p>Dissertation, cas pratique, commentaire.</p></a>
 <a href="#/droit"><h3>Droit sénégalais</h3><p>Rechercher un code, une loi, une source officielle.</p></a>
 <a href="#/lexique"><h3>Lexique juridique</h3><p>579 termes, avec recherche.</p></a>
-<a href="#/entrainement"><h3>Tests psychotechniques</h3><p>Entraînement et préparation au concours ENA.</p></a>
+<a href="#/entrainement"><h3>Tests psychotechniques</h3><p>Entraînement et préparation au concours ENA.</p></a><a href="#/espace"><h3>Mon espace</h3><p>Progression, favoris, notes et plan de révision.</p></a>
 <a href="#/faq"><h3>Questions</h3><p>Les réponses aux questions fréquentes.</p></a>
 </div></div></section>
 
@@ -624,6 +655,12 @@ II. Titre de la seconde partie
 <details><summary>Qui est derrière LeDroitFacile SN ?</summary><p>Cheikh Ibrahima Diop, étudiant en Master de droit privé à l’Université Cheikh Anta Diop de Dakar.</p></details>
 </div></div></section>
 
+<section class="alt" id="espace" data-page="espace"><div class="wrap">
+<h2>Mon espace</h2>
+<p class="lead">Ta progression, tes favoris, tes notes, tes erreurs et ton plan de révision. Tout est enregistré sur ton appareil : rien n’est envoyé sur internet.</p>
+<div id="esx"></div>
+</div></section>
+
 <section class="final" id="rejoindre" data-page="*"><div class="wrap">
 <h2>Bienvenue en Faculté de Droit. Ton parcours commence maintenant.</h2>
 <p class="lead" style="margin:0 auto">Apprends. Comprends. Progresse. Réussis.</p>
@@ -887,7 +924,10 @@ var g=el('div','rb');
 R.forEach(function(r,n){var b=el('button','rb-c'),mb=myBest(n);b.type='button';
 b.appendChild(el('strong',0,r[0]));b.appendChild(el('span',0,r[1]));
 b.appendChild(el('em',0,mb!=null?'Meilleur score : '+mb+' / '+NQ:NQ+' questions'));
-b.onclick=function(){start(n)};g.appendChild(b)});box.appendChild(g);
+b.onclick=function(){start(n)};g.appendChild(b)});
+var ex=el('button','rb-c'),eb=examBest();ex.type='button';ex.appendChild(el('strong',0,'📝 Examen blanc'));ex.appendChild(el('span',0,'Les 7 rubriques mélangées · 35 questions · 35 minutes · note sur 20'));ex.appendChild(el('em',0,eb!=null?'Meilleure note : '+fn1(eb)+' / 20':'Comme au concours'));ex.onclick=examStart;g.appendChild(ex);
+var er=ld('ldf-err').length,e2=el('button','rb-c');e2.type='button';e2.appendChild(el('strong',0,'🔁 Mes erreurs'));e2.appendChild(el('span',0,'Refais les questions que tu as ratées'));e2.appendChild(el('em',0,er?er+' à revoir':'Rien à revoir'));e2.onclick=errStart;g.appendChild(e2);
+box.appendChild(g);
 box.appendChild(el('p','qz-e','⚔️ Pour défier un ami : termine une rubrique puis envoie-lui le lien de ton défi. Il jouera exactement les mêmes questions que toi.'))}
 function board(c,src){clearInterval(tick);box.textContent='';if(c==null)c='g';src=src||(LB_URL?'global':'local');
 box.appendChild(el('p','qz-q','🏆 Classement'));
@@ -904,27 +944,73 @@ var loc='Classement enregistré sur cet appareil : il réunit tes parties et les
 if(src==='global'){out.appendChild(el('p','qz-e','Chargement…'));gFetch(c).then(function(es){fill(es,'Classement mondial (meilleur score de chaque joueur).')}).catch(function(){fill(ldb(),'Connexion impossible : classement de cet appareil.')})}
 else fill(ldb(),loc);
 var bk=el('button','btn sec','← Rubriques');bk.type='button';bk.style.marginTop='16px';bk.onclick=menu;box.appendChild(bk)}
-function start(n,sd,d){cur=n;seed=sd||newSeed();duel=d||null;Qs=buildQ(n,seed);i=0;score=0;t0=Date.now();show()}
+var mode='solo',exm=null;
+function ld(k){try{var a=JSON.parse(sto(k)||'[]');return Array.isArray(a)?a:[]}catch(e){return[]}}
+function sv(k,a){sto(k,JSON.stringify(a))}
+function ek(q){return q[0]+'|'+q[1][q[2]]}
+function log(e){if(window.ldfLog)window.ldfLog(e)}
+function recErr(q){if(q.cat==null)return;var a=ld('ldf-err'),k=ek(q);if(a.some(function(x){return x.k===k}))return;a.push({k:k,c:q.cat,q:q[0],o:q[1],a:q[2],e:q[3]});sv('ldf-err',a.slice(-200))}
+function okErr(q){var a=ld('ldf-err'),k=ek(q),b=a.filter(function(x){return x.k!==k});if(b.length!==a.length){sv('ldf-err',b);log({k:'fix'})}}
+function tag(a,n){a.forEach(function(q){q.cat=n});return a}
+function fn1(x){return String(x).replace('.',',')}
+function examBest(){var b=null;ld('ldf-prog').forEach(function(e){if(e.k==='exam'&&(b===null||e.note>b))b=e.note});return b}
+function start(n,sd,d){cur=n;seed=sd||newSeed();duel=d||null;mode=d?'duel':'solo';exm=null;Qs=tag(buildQ(n,seed),n);i=0;score=0;t0=Date.now();show()}
+function examStart(){mode='exam';duel=null;cur=null;seed=newSeed();Qs=[];for(var n=0;n<7;n++){var a=tag(buildQ(n,seed+n).slice(0,5),n);a.forEach(function(q){q.rn=R[n][0]});Qs=Qs.concat(a)}exm={end:Date.now()+35*60000,by:{},wrong:[]};i=0;score=0;t0=Date.now();show()}
+function errStart(){var a=ld('ldf-err');if(!a.length){menu();box.appendChild(el('p','qz-e','Aucune erreur à revoir pour l’instant : les questions que tu rates apparaissent ici.'));return}
+mode='err';duel=null;exm=null;cur=null;Qs=sh(a.slice()).slice(0,20).map(function(x){var q=[x.q,x.o,x.a,x.e];q.cat=x.c;return q});i=0;score=0;t0=Date.now();show()}
 function show(){
+if(exm&&Date.now()>=exm.end){end();return}
 var Q=Qs,q=Q[i];box.textContent='';
-var top=el('div','qz-top');top.appendChild(el('span',0,(duel?'⚔️ ':'')+R[cur][0]+' · '+(i+1)+' / '+Q.length));
-var tm=el('span',0,'⏱ '+fmt(Math.round((Date.now()-t0)/1000)));top.appendChild(tm);var qb=el('button','qz-x','← Changer de rubrique');qb.type='button';qb.onclick=menu;top.appendChild(qb);box.appendChild(top);var pb=el('div','qz-pb'),pf=el('span');pf.style.width=(i/Q.length*100)+'%';pb.appendChild(pf);box.appendChild(pb);
-clearInterval(tick);tick=setInterval(function(){tm.textContent='⏱ '+fmt(Math.round((Date.now()-t0)/1000))},1000);
+var lab=mode==='exam'?'Examen blanc · '+q.rn:mode==='err'?'Mes erreurs · '+R[q.cat][0]:(duel?'⚔️ ':'')+R[cur][0];
+var top=el('div','qz-top');top.appendChild(el('span',0,lab+' · '+(i+1)+' / '+Q.length));
+var tm=el('span',0,'');top.appendChild(tm);
+function tt(){if(exm){var rs=Math.max(0,exm.end-Date.now());tm.textContent='⏳ '+fmt(Math.ceil(rs/1000));return rs<=0}tm.textContent='⏱ '+fmt(Math.round((Date.now()-t0)/1000));return false}
+tt();
+var qb=el('button','qz-x',mode==='exam'?'Abandonner':'← Changer de rubrique');qb.type='button';qb.onclick=menu;top.appendChild(qb);box.appendChild(top);var pb=el('div','qz-pb'),pf=el('span');pf.style.width=(i/Q.length*100)+'%';pb.appendChild(pf);box.appendChild(pb);
+clearInterval(tick);tick=setInterval(function(){if(tt()){end()}},1000);
 box.appendChild(el('p','qz-q',q[0]));
 var o=el('div','qz-o'),ex=el('p','qz-e','');
 q[1].forEach(function(txt,k){var b=el('button',0,txt);b.type='button';b.onclick=function(){
+var good=k===q[2];
+if(exm){var u=exm.by[q.cat]||(exm.by[q.cat]={ok:0,n:0});u.n++;if(good){score++;u.ok++}else{recErr(q);exm.wrong.push({q:q,k:k})}
+i++;if(i<Q.length)show();else end();return}
 Array.prototype.forEach.call(o.children,function(c,n){c.disabled=true;if(n===q[2])c.className='ok'});
-if(k===q[2])score++;else b.className='ko';
-ex.textContent=(k===q[2]?'Bonne réponse. ':'Pas tout à fait. ')+q[3];
+if(good){score++;if(mode==='err')okErr(q)}else{b.className='ko';if(mode!=='err')recErr(q)}
+ex.textContent=(good?'Bonne réponse. ':'Pas tout à fait. ')+q[3];
 var nx=el('button','btn pri',i<Q.length-1?'Question suivante':'Voir mon résultat');nx.type='button';
 nx.onclick=function(){i++;if(i<Q.length)show();else end()};box.appendChild(nx);nx.focus()};o.appendChild(b)});
 box.appendChild(o);box.appendChild(ex)}
-function end(){clearInterval(tick);var n=Qs.length,sec=Math.round((Date.now()-t0)/1000),nm=myName()||'Joueur',rn=R[cur][0],site=baseUrl();
+function examEnd(sec){clearInterval(tick);var n=Qs.length,note=Math.round(score/n*200)/10,site=baseUrl(),
+mt=note>=16?'Très bien':note>=14?'Bien':note>=12?'Assez bien':note>=10?'Passable':'À renforcer';
+log({k:'exam',p:score,t:sec,note:note});box.textContent='';
+box.appendChild(el('div','qz-res',fn1(note)+' / 20'));
+box.appendChild(el('p',0,'Examen blanc · '+score+' / '+n+' bonnes réponses · temps : '+fmt(sec)+' sur 35:00'));
+var vs=el('div','vs');vs.appendChild(el('strong',0,'Mention : '+mt));
+var t=el('table','lb'),th=el('tr');['Rubrique','Réussite'].forEach(function(h,x){th.appendChild(el('th',x?'tn':0,h))});t.appendChild(th);
+for(var c=0;c<7;c++){var u=exm.by[c]||{ok:0,n:5},tr=el('tr');tr.appendChild(el('td',0,R[c][0]));tr.appendChild(el('td','tn',u.ok+' / 5'));t.appendChild(tr)}
+vs.appendChild(t);box.appendChild(vs);
+if(exm.wrong.length){var dt=document.createElement('details');dt.className='cor';dt.appendChild(el('summary',0,'Voir la correction ('+exm.wrong.length+' erreur'+(exm.wrong.length>1?'s':'')+')'));
+exm.wrong.forEach(function(w){var d=el('div','cor-i');d.appendChild(el('strong',0,w.q[0]));d.appendChild(el('p',0,'Ta réponse : '+w.q[1][w.k]));d.appendChild(el('p','ok-t','Bonne réponse : '+w.q[1][w.q[2]]));d.appendChild(el('p','qz-e',w.q[3]));dt.appendChild(d)});box.appendChild(dt)}
+var r=el('button','btn pri','Refaire un examen');r.type='button';r.onclick=examStart;
+var m=el('button','btn sec','Autres rubriques');m.type='button';m.style.marginLeft='10px';m.onclick=menu;box.appendChild(r);box.appendChild(m);
+if(exm.wrong.length){var eb=el('button','btn sec','🔁 Mes erreurs');eb.type='button';eb.style.marginLeft='10px';eb.onclick=errStart;box.appendChild(eb)}
+box.appendChild(shr('Partager ma note','J’ai eu '+fn1(note)+'/20 ('+mt+') à l’examen blanc de LeDroitFacile SN. Tu peux faire mieux ?',site+'#/entrainement'))}
+function errEnd(sec){clearInterval(tick);var left=ld('ldf-err').length;log({k:'err',p:score,t:sec});box.textContent='';
+box.appendChild(el('div','qz-res',score+' / '+Qs.length));
+box.appendChild(el('p',0,'Mes erreurs · temps : '+fmt(sec)));
+box.appendChild(el('p','qz-e',left?'Il te reste '+left+' question'+(left>1?'s':'')+' à revoir. Celles que tu réussis disparaissent de la liste.':'Bravo : plus aucune erreur à revoir.'));
+var r=el('button','btn pri',left?'Continuer':'Retour');r.type='button';r.onclick=left?errStart:menu;
+var m=el('button','btn sec','Autres rubriques');m.type='button';m.style.marginLeft='10px';m.onclick=menu;box.appendChild(r);box.appendChild(m)}
+function end(){clearInterval(tick);var sec=Math.round((Date.now()-t0)/1000);
+if(mode==='exam')return examEnd(sec);if(mode==='err')return errEnd(sec);
+var n=Qs.length,nm=myName()||'Joueur',rn=R[cur][0],site=baseUrl();
 var e={n:nm,c:cur,p:score,t:sec,d:Date.now(),o:'me'};addScore(e);gPost(e);box.textContent='';
+var w0=duel?(score!==duel.p?(score>duel.p?1:-1):(sec!==duel.t?(sec<duel.t?1:-1):0)):0;
+log({k:duel?'duel':'quiz',c:cur,p:score,t:sec,w:w0>0?1:0});
 box.appendChild(el('div','qz-res',score+' / '+n));
 box.appendChild(el('p',0,rn+' · temps : '+fmt(sec)));
 var vt='';
-if(duel){var w=score!==duel.p?(score>duel.p?1:-1):(sec!==duel.t?(sec<duel.t?1:-1):0);
+if(duel){var w=w0;
 vt=w>0?'Victoire 🎉':w<0?'Défaite':'Égalité';
 var vs=el('div','vs');vs.appendChild(el('strong',0,vt));
 vs.appendChild(el('p',0,'⚔️ Toi : '+score+' / '+n+' en '+fmt(sec)+'  ·  '+duel.n+' : '+duel.p+' / '+n+' en '+fmt(duel.t)));
@@ -934,6 +1020,7 @@ var r=el('button','btn pri',duel?'Revanche':'Recommencer');r.type='button';r.onc
 var m=el('button','btn sec','Autres rubriques');m.type='button';m.style.marginLeft='10px';m.onclick=menu;
 var lbb=el('button','btn sec','🏆 Classement');lbb.type='button';lbb.style.marginLeft='10px';lbb.onclick=function(){board(cur)};
 box.appendChild(r);box.appendChild(m);box.appendChild(lbb);
+if(ld('ldf-err').length){var eb=el('button','btn sec','🔁 Mes erreurs');eb.type='button';eb.style.marginLeft='10px';eb.onclick=errStart;box.appendChild(eb)}
 if(duel){box.appendChild(shr('Partager ce duel',nm+' '+score+'/'+n+' contre '+duel.n+' '+duel.p+'/'+n+' en « '+rn+' » sur LeDroitFacile SN : '+vt+'.',site+'#/entrainement'))}
 else{var link=site+'#/entrainement?d='+enc({c:cur,s:seed,n:nm,p:score,t:sec});
 box.appendChild(shr('⚔️ Défier un ami (mêmes questions que toi)','⚔️ '+nm+' te défie en « '+rn+' » sur LeDroitFacile SN ! Score à battre : '+score+'/'+n+' en '+fmt(sec)+'.',link));
@@ -945,11 +1032,12 @@ var nr=el('div','nm'),lb=el('label',0,'Ton pseudo'),inp=el('input');lb.htmlFor='
 var go=el('button','btn pri','Relever le défi');go.type='button';go.onclick=function(){sto('ldf-name',inp.value.trim().slice(0,20));addScore({n:o.n,c:o.c,p:o.p,t:o.t,d:Date.now(),o:'duel'});start(o.c,o.s,o)};
 var no=el('button','btn sec','Choisir une autre rubrique');no.type='button';no.style.marginLeft='10px';no.onclick=menu;box.appendChild(go);box.appendChild(no)}
 window.ldfOnRoute=function(q){var m=/(?:^|&)d=([^&]+)/.exec(q||'');if(!m)return;var o=dec(m[1]);if(o)duelIntro(o)};
+window.ldfQuiz={errors:errStart,exam:examStart};
 menu();
 })();
 
 (function(){
-var PG=['accueil','apropos','orientation','fiches','lexique','droit','entrainement','faq'],pend=null;
+var PG=['accueil','apropos','orientation','fiches','lexique','droit','entrainement','faq','espace'],pend=null;
 function show(h,a){try{localStorage.setItem('ldf-page',h)}catch(e){}
 document.querySelectorAll('[data-page]').forEach(function(s){var d=s.getAttribute('data-page');s.style.display=(d==='*'||d===h)?'':'none'});
 document.getElementById('back').style.display=h==='accueil'?'none':'';
@@ -957,7 +1045,7 @@ document.querySelectorAll('nav a,.menu a,.bn a').forEach(function(l){l.classList
 var e=a&&document.getElementById(a);if(e&&a!=='top')e.scrollIntoView({behavior:'smooth',block:'start'});else window.scrollTo(0,0)}
 function route(){var h=location.hash.replace(/^#\/?/,'')||(function(){try{return localStorage.getItem('ldf-page')}catch(e){return null}})()||'accueil',a=pend;pend=null;
 var qi=h.indexOf('?'),q='';if(qi>=0){q=h.slice(qi+1);h=h.slice(0,qi)}
-if(h==='rejoindre'){h='accueil';a='rejoindre'}if(PG.indexOf(h)<0)h='accueil';show(h,a);if(window.ldfOnRoute)window.ldfOnRoute(q)}
+if(h==='rejoindre'){h='accueil';a='rejoindre'}if(PG.indexOf(h)<0)h='accueil';show(h,a);if(window.ldfOnRoute)window.ldfOnRoute(q);if(window.ldfPage)window.ldfPage(h)}
 function go(pg,a){pend=a;if(location.hash==='#/'+pg)route();else location.hash='#/'+pg}
 window.addEventListener('hashchange',route);route();
 
@@ -1062,7 +1150,7 @@ var T=[
 [8,'Cybercriminalité','Infractions liées aux systèmes d’information et aux réseaux.','Loi n° 2008-11 du 25 janvier 2008','cybercriminalité informatique internet piratage'],
 [8,'Code de la presse','Liberté de la presse, statut des journalistes et des médias.','Dans sa version en vigueur','presse journaliste média diffusion']
 ];
-var cur=0,Q='';
+var cur=0,Q='';window.ldfT=T;
 var ch=$('dch');C.forEach(function(c,i){var b=document.createElement('button');b.type='button';b.textContent=c;b.onclick=function(){cur=i;draw()};ch.appendChild(b)});
 function g(q,s){return 'https://www.google.com/search?q='+encodeURIComponent(q+(s?' site:'+s:''))}
 function btn(h,l,cls){var a=document.createElement('a');a.className='btn '+(cls||'sec');a.href=h;a.target='_blank';a.rel='noopener';a.textContent=l;return a}
@@ -1086,6 +1174,204 @@ $('dqf').addEventListener('submit',function(e){e.preventDefault();Q=$('dqi').val
 var y=$('djy'),yr=new Date().getFullYear();for(var i=yr;i>=1960;i--){var o=document.createElement('option');o.value=i;o.textContent=i;y.appendChild(o)}
 function jo(){$('djg').href='https://www.vie-publique.sn/documents/journal-officiel-senegal/annee/'+y.value}y.addEventListener('change',jo);jo();
 draw();
+})();
+</script>
+<script>
+(function(){
+function $(i){return document.getElementById(i)}
+function sto(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+function ld(k,d){try{var x=JSON.parse(sto(k));return x==null?d:x}catch(e){return d}}
+function sv(k,x){sto(k,JSON.stringify(x))}
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function btn(l,c,f){var b=el('button',c||'qz-x',l);b.type='button';if(f)b.onclick=f;return b}
+function nz(s){return String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
+function p2(n){return ('0'+n).slice(-2)}
+function today(){var d=new Date();return d.getFullYear()+'-'+p2(d.getMonth()+1)+'-'+p2(d.getDate())}
+function dayN(s){var p=s.split('-');return Math.round(Date.UTC(+p[0],+p[1]-1,+p[2])/864e5)}
+function fromDay(n){var d=new Date(n*864e5);return d.getUTCFullYear()+'-'+p2(d.getUTCMonth()+1)+'-'+p2(d.getUTCDate())}
+var MOIS=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],JOURS=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+function lab(s){var d=new Date(dayN(s)*864e5);return JOURS[d.getUTCDay()]+' '+d.getUTCDate()+' '+MOIS[d.getUTCMonth()]}
+function nav(page,fn){if(location.hash==='#/'+page){fn()}else{location.hash='#/'+page;setTimeout(fn,150)}}
+var RUB=['Orthographe et grammaire','Vocabulaire','Analogies et intrus','Calcul et problèmes','Suites numériques','Lettres et codes','Raisonnement logique'];
+var D=[];try{D=JSON.parse($('lxd').textContent)}catch(e){}
+
+/* ---------- Journal d’activité ---------- */
+window.ldfLog=function(e){var a=ld('ldf-prog',[]);e.d=today();a.push(e);sv('ldf-prog',a.slice(-800))};
+function stats(){var a=ld('ldf-prog',[]),days={},best={},cnt={},last={},ex=null,wins=0,fix=0,perfect=false,cards=0,games=0;
+a.forEach(function(e){days[e.d]=1;
+if(e.k==='quiz'||e.k==='duel'){var c=e.c;games++;cnt[c]=(cnt[c]||0)+1;(last[c]=last[c]||[]).push(e.p);if(best[c]==null||e.p>best[c])best[c]=e.p;if(e.p>=30)perfect=true;if(e.k==='duel'&&e.w)wins++}
+if(e.k==='exam'){games++;if(ex===null||e.note>ex)ex=e.note}
+if(e.k==='fix')fix++;if(e.k==='card')cards+=e.n||0});
+var t=dayN(today()),x=days[today()]?t:t-1,s=0;while(days[fromDay(x)]){s++;x--}
+var mx=Math.max(ld('ldf-maxs',0),s);if(mx>ld('ldf-maxs',0))sv('ldf-maxs',mx);
+return{days:days,best:best,cnt:cnt,last:last,exam:ex,wins:wins,fix:fix,perfect:perfect,cards:cards,games:games,streak:s,maxs:mx,
+known:Object.keys(ld('ldf-known',{})).length,favs:ld('ldf-fav',[]).length,rubs:Object.keys(cnt).length,top:Math.max.apply(null,[0].concat(Object.keys(best).map(function(k){return best[k]})))}}
+var BADGES=[
+['🌱','Premier pas','Termine une première série de questions.',function(s){return s.games>=1}],
+['🔥','Régulier','3 jours de suite.',function(s){return s.maxs>=3}],
+['⚡','Assidu','7 jours de suite.',function(s){return s.maxs>=7}],
+['🏔️','Infatigable','30 jours de suite.',function(s){return s.maxs>=30}],
+['🎯','Sans faute','30 / 30 dans une rubrique.',function(s){return s.perfect}],
+['⭐','Excellence','27 / 30 ou plus dans une rubrique.',function(s){return s.top>=27}],
+['🧭','Polyvalent','Joue les 7 rubriques.',function(s){return s.rubs>=7}],
+['📝','Candidat','Termine un examen blanc.',function(s){return s.exam!==null}],
+['🎓','Mention bien','14 / 20 ou plus à l’examen blanc.',function(s){return s.exam!==null&&s.exam>=14}],
+['📖','Lexicographe','50 termes acquis.',function(s){return s.known>=50}],
+['📚','Érudit','200 termes acquis.',function(s){return s.known>=200}],
+['🗂️','Collectionneur','5 favoris.',function(s){return s.favs>=5}],
+['🔁','Correcteur','10 erreurs corrigées.',function(s){return s.fix>=10}],
+['⚔️','Duelliste','Gagne un duel.',function(s){return s.wins>=1}]];
+
+/* ---------- Favoris et notes ---------- */
+function favs(){return ld('ldf-fav',[])}
+function isFav(k){return favs().some(function(x){return x.k===k})}
+function toggleFav(o){var a=favs(),i=-1;a.forEach(function(x,n){if(x.k===o.k)i=n});if(i>=0)a.splice(i,1);else{o.d=today();o.n='';a.unshift(o)}sv('ldf-fav',a);return i<0}
+function setStar(b){var on=isFav(b.getAttribute('data-k'));b.textContent=on?'★':'☆';b.setAttribute('aria-pressed',String(on));b.title=on?'Retirer des favoris':'Ajouter aux favoris'}
+function syncStars(){document.querySelectorAll('.fv').forEach(setStar)}
+function star(o){var b=btn('☆','fv',null);b.setAttribute('data-k',o.k);b.onclick=function(ev){ev.stopPropagation();toggleFav(o);syncStars()};setStar(b);return b}
+function decorate(root,sel,mk){root.querySelectorAll(sel).forEach(function(a){if(a.getAttribute('data-s'))return;a.setAttribute('data-s','1');var o=mk(a);if(o)a.appendChild(star(o))})}
+function obs(id,sel,mk){var r=$(id);if(!r)return;var go=function(){decorate(r,sel,mk)};new MutationObserver(go).observe(r,{childList:true});go()}
+obs('lxr','article.lx',function(a){var h=a.querySelector('h3'),p=a.querySelector('p');return{k:'lx:'+h.textContent,t:'lx',ti:h.textContent,sub:'Lexique',txt:p?p.textContent:''}});
+obs('dgr','article.dc',function(a){var h=a.querySelector('h4'),s=a.querySelector('small'),p=a.querySelector('p');return{k:'dr:'+h.textContent,t:'dr',ti:h.textContent,sub:s?s.textContent:'Droit sénégalais',txt:p?p.textContent:''}});
+/* fiches : favori + impression d’une seule fiche */
+var fic=document.querySelector('.fiche');
+function printFiche(h){var kids=Array.prototype.slice.call(fic.children),s=kids.indexOf(h),e=kids.length;for(var k=s+1;k<kids.length;k++){if(kids[k].tagName==='H4'){e=k;break}}
+var sel=kids.slice(s,e);sel.forEach(function(x){x.classList.add('pr')});var hd=el('p','pfh','LeDroitFacile SN · Le droit, simplement · '+h.textContent.split(':')[0]);fic.insertBefore(hd,fic.firstChild);hd.classList.add('pr');
+document.body.classList.add('pf');function clean(){document.body.classList.remove('pf');sel.forEach(function(x){x.classList.remove('pr')});if(hd.parentNode)hd.parentNode.removeChild(hd);window.removeEventListener('afterprint',clean)}
+window.addEventListener('afterprint',clean);setTimeout(function(){window.print();setTimeout(clean,1500)},60)}
+if(fic)fic.querySelectorAll('h4[id^="fiche"]').forEach(function(h){var w=el('span','fx');w.appendChild(star({k:'fi:'+h.id,t:'fi',ti:h.textContent,sub:'Fiche de méthode',txt:''}));w.appendChild(btn('🖨️ PDF','qz-x pbtn',function(){printFiche(h)}));h.appendChild(w)});
+syncStars();
+
+/* ---------- Terme du jour et flashcards ---------- */
+function known(){return ld('ldf-known',{})}
+function tdj(){if(!D.length)return null;var e=D[(dayN(today())*7919)%D.length],c=el('div','es-card tdj');c.appendChild(el('small',0,'Terme du jour'));c.appendChild(el('h3',0,e[0]));c.appendChild(el('p',0,e[1]));
+var r=el('div','shr-r');r.appendChild(btn('Voir dans le lexique','qz-x',function(){toLex(e[0])}));var s=star({k:'lx:'+e[0],t:'lx',ti:e[0],sub:'Lexique',txt:e[1]});r.appendChild(s);c.appendChild(r);return c}
+function toLex(t){nav('lexique',function(){var q=$('lxq');q.value=t;q.dispatchEvent(new Event('input'));var ls=$('lxs');if(ls)setTimeout(function(){ls.hidden=true},60);var r=$('lxr');if(r)r.scrollIntoView({behavior:'smooth',block:'start'})})}
+function toDr(t){nav('droit',function(){var q=$('dqi');q.value=t;q.dispatchEvent(new Event('input'));var g=$('dgr');if(g)g.scrollIntoView({behavior:'smooth',block:'start'})})}
+function toId(page,id){nav(page,function(){var e=$(id);if(e){if(e.tagName==='DETAILS')e.open=true;e.scrollIntoView({behavior:'smooth',block:'start'})}})}
+function openFav(f){if(f.t==='lx')toLex(f.ti);else if(f.t==='dr')toDr(f.ti);else toId('fiches',f.k.slice(3))}
+function closeO(o){if(o.parentNode)o.parentNode.removeChild(o)}
+function overlay(){var o=el('div','ovl'),c=el('div','ovl-c wide');o.setAttribute('role','dialog');o.setAttribute('aria-modal','true');o.appendChild(c);o.onclick=function(e){if(e.target===o)closeO(o)};o.addEventListener('keydown',function(e){if(e.key==='Escape')closeO(o)});document.body.appendChild(o);return{o:o,c:c}}
+function flash(){var O=overlay(),c=O.c,deck=[],i=0,seen=0,ok=0,src='all';
+function pick(){var K=known(),f=D.filter(function(e){if(src==='todo')return!K[e[0]];if(src==='fav')return isFav('lx:'+e[0]);return true});
+var u=f.filter(function(e){return!K[e[0]]}),kn=f.filter(function(e){return K[e[0]]});function shf(a){for(var x=a.length-1;x>0;x--){var y=Math.floor(Math.random()*(x+1)),t=a[x];a[x]=a[y];a[y]=t}return a}
+deck=shf(u).concat(shf(kn)).slice(0,20);i=0;seen=0;ok=0}
+function menu(){c.textContent='';c.appendChild(el('h3',0,'Flashcards du lexique'));var K=Object.keys(known()).length;
+c.appendChild(el('p','qz-e','Termes acquis : '+K+' / '+D.length));var pb=el('div','qz-pb'),pf=el('span');pf.style.width=(K/D.length*100)+'%';pb.appendChild(pf);c.appendChild(pb);
+var g=el('div','chips');[['all','Tous les termes'],['todo','À revoir'],['fav','Mes favoris']].forEach(function(s){var b=btn(s[1],'qz-x'+(src===s[0]?' on':''),function(){src=s[0];menu()});g.appendChild(b)});c.appendChild(g);
+c.appendChild(el('p','qz-e','Séries de 20 cartes. Lis le terme, essaie de te rappeler la définition, retourne la carte, puis dis si tu la savais.'));
+var go=btn('Commencer','btn pri',function(){pick();if(!deck.length){c.appendChild(el('p','qz-e','Aucune carte dans cette liste.'));return}card()});c.appendChild(go);c.appendChild(btn('Fermer','btn sec',function(){closeO(O.o)})).style.marginLeft='10px';go.focus()}
+function card(){var e=deck[i];c.textContent='';c.appendChild(el('p','qz-e',(i+1)+' / '+deck.length));var f=el('div','fcard');f.appendChild(el('h3',0,e[0]));var d=el('p','fdef',e[1]);d.style.display='none';f.appendChild(d);c.appendChild(f);
+var r=el('div','shr-r');var show=btn('Voir la définition','btn pri',function(){d.style.display='';show.style.display='none';r2.style.display=''});r.appendChild(show);c.appendChild(r);
+var r2=el('div','shr-r');r2.style.display='none';r2.appendChild(btn('✓ Je savais','btn pri',function(){var K=known();K[e[0]]=1;sv('ldf-known',K);ok++;nx()}));r2.appendChild(btn('↻ À revoir','btn sec',function(){var K=known();delete K[e[0]];sv('ldf-known',K);nx()}));c.appendChild(r2);
+c.appendChild(btn('Arrêter','qz-x',function(){fin()})).style.marginTop='14px';show.focus()}
+function nx(){seen++;i++;if(i<deck.length)card();else fin()}
+function fin(){if(seen)window.ldfLog({k:'card',n:seen});c.textContent='';c.appendChild(el('h3',0,'Série terminée'));c.appendChild(el('p',0,seen?'Tu savais '+ok+' carte'+(ok>1?'s':'')+' sur '+seen+'.':'Aucune carte vue.'));c.appendChild(btn('Rejouer','btn pri',menu));c.appendChild(btn('Fermer','btn sec',function(){closeO(O.o)})).style.marginLeft='10px'}
+menu()}
+(function(){var lc=$('lxc');if(!lc)return;var w=el('div','lxt');w.appendChild(btn('🃏 Réviser avec des flashcards','btn pri',flash));var t=tdj();lc.parentNode.insertBefore(w,lc.nextSibling);if(t)lc.parentNode.insertBefore(t,w)})();
+
+/* ---------- Plan de révision ---------- */
+function planTasks(f){var ena=[],lic=[];
+RUB.forEach(function(r){ena.push(['🎯','Rubrique « '+r+' » : une série de 30 questions','entrainement'])});
+ena.push(['🔁','Refaire mes erreurs','entrainement']);
+lic.push(['📖','Lexique : 20 flashcards','lexique']);
+['La dissertation','Le cas pratique','Le commentaire d’arrêt','Le commentaire de texte'].forEach(function(x){lic.push(['📝','Fiche de méthode : '+x,'fiches'])});
+lic.push(['⚖️','Droit sénégalais : repérer les textes de ton programme','droit']);
+var a=[];var L=Math.max(ena.length,lic.length);for(var i=0;i<L;i++){if(f.ena&&ena[i])a.push(ena[i]);if(f.lic&&lic[i])a.push(lic[i])}return a}
+function planFor(p){var n=dayN(p.date)-dayN(today());if(n<1)return null;var pool=planTasks(p.focus||{}),out=[],cap=Math.min(n,120);
+for(var d=0;d<cap;d++){var rest=n-1-d,t=[];
+if(rest===0)t=[['🌙','Veille : repos, relis tes favoris et tes erreurs','espace']];
+else if(p.focus.ena&&(rest===6||rest===3))t=[['📝','Examen blanc chronométré','entrainement'],['🔁','Corriger les erreurs de l’examen','entrainement']];
+else if(pool.length){t=[pool[(d*2)%pool.length],pool[(d*2+1)%pool.length]];if(t[0]===t[1])t=[t[0]]}
+out.push({d:fromDay(dayN(today())+d),t:t,rest:rest})}
+return{n:n,days:out}}
+function planUI(host){host.textContent='';var p=ld('ldf-plan',null),f=el('div','es-form');
+var inp=el('input');inp.type='date';inp.min=fromDay(dayN(today())+1);inp.value=p?p.date:'';inp.setAttribute('aria-label','Date de ton examen ou concours');
+var c1=el('label','ck'),i1=el('input');i1.type='checkbox';i1.checked=p?!!p.focus.ena:true;c1.appendChild(i1);c1.appendChild(document.createTextNode(' Concours (tests psychotechniques)'));
+var c2=el('label','ck'),i2=el('input');i2.type='checkbox';i2.checked=p?!!p.focus.lic:true;c2.appendChild(i2);c2.appendChild(document.createTextNode(' Examens de Licence (lexique, fiches, droit)'));
+var l=el('label',0,'Date de ton examen : ');l.appendChild(inp);f.appendChild(l);f.appendChild(c1);f.appendChild(c2);
+f.appendChild(btn('Créer mon planning','btn pri',function(){if(!inp.value||dayN(inp.value)<=dayN(today())){msg.textContent='Choisis une date à venir.';return}if(!i1.checked&&!i2.checked){msg.textContent='Coche au moins un objectif.';return}sv('ldf-plan',{date:inp.value,focus:{ena:i1.checked,lic:i2.checked},done:{}});planUI(host)}));
+var msg=el('p','qz-e','');f.appendChild(msg);host.appendChild(f);
+if(!p)return;var P=planFor(p);if(!P){host.appendChild(el('p','qz-e','La date de ton examen est passée. Choisis-en une nouvelle ci-dessus.'));return}
+var tot=0,dn=0;P.days.forEach(function(x,di){x.t.forEach(function(_,j){tot++;if(p.done[di+':'+j])dn++})});
+var hd=el('div','es-card');hd.appendChild(el('h3',0,'J-'+P.n+' · '+lab(p.date)));hd.appendChild(el('p',0,dn+' tâche'+(dn>1?'s':'')+' faite'+(dn>1?'s':'')+' sur '+tot));var pb=el('div','qz-pb'),pf=el('span');pf.style.width=(tot?dn/tot*100:0)+'%';pb.appendChild(pf);hd.appendChild(pb);host.appendChild(hd);
+var all=false,list=el('div');host.appendChild(list);
+function draw(){list.textContent='';P.days.forEach(function(x,di){if(!all&&di>6)return;var c=el('div','es-day'+(di===0?' now':''));c.appendChild(el('strong',0,(di===0?'Aujourd’hui · ':'')+lab(x.d)+'  (J-'+(x.rest+1)+')'));
+x.t.forEach(function(t,j){var k=di+':'+j,r=el('label','ck'),cb=el('input');cb.type='checkbox';cb.checked=!!p.done[k];cb.onchange=function(){var q=ld('ldf-plan',p);q.done[k]=cb.checked;if(!cb.checked)delete q.done[k];sv('ldf-plan',q);p=q};r.appendChild(cb);r.appendChild(document.createTextNode(' '+t[0]+' '+t[1]+' '));
+var a=el('a','qz-x','Ouvrir');a.href='#/'+t[2];r.appendChild(a);c.appendChild(r)});list.appendChild(c)});
+if(P.days.length>7){list.appendChild(btn(all?'Réduire':'Voir tout le planning ('+P.days.length+' jours)','qz-x',function(){all=!all;draw()}))}}
+draw();host.appendChild(btn('Supprimer mon planning','qz-x',function(){sto('ldf-plan','null');planUI(host)})).style.marginTop='12px'}
+
+/* ---------- Page Mon espace ---------- */
+function section(id,title){var s=el('div','es-sec');s.id=id;s.appendChild(el('h3','oh',title));return s}
+function renderEspace(){var root=$('esx');if(!root)return;root.textContent='';var S=stats();
+var nv=el('div','chips');[['es-prog','📈 Progression'],['es-fav','⭐ Favoris et notes'],['es-err','🔁 Mes erreurs'],['es-plan','📅 Plan de révision'],['es-data','💾 Mes données']].forEach(function(x){nv.appendChild(btn(x[1],'qz-x',function(){$(x[0]).scrollIntoView({behavior:'smooth',block:'start'})}))});root.appendChild(nv);
+var t=tdj();if(t)root.appendChild(t);
+/* progression */
+var sp=section('es-prog','Ma progression'),st=el('div','es-stats');
+[[S.streak,'jour'+(S.streak>1?'s':'')+' de suite'],[S.games,'séries et examens'],[S.known+' / '+D.length,'termes acquis'],[S.exam!==null?String(S.exam).replace('.',',')+' / 20':'–','meilleur examen blanc']].forEach(function(x){var c=el('div','es-st');c.appendChild(el('strong',0,x[0]));c.appendChild(el('span',0,x[1]));st.appendChild(c)});sp.appendChild(st);
+/* 14 derniers jours */
+var strip=el('div','es-strip');for(var d=13;d>=0;d--){var ds=fromDay(dayN(today())-d),b=el('span',S.days[ds]?'on':'');b.title=lab(ds);strip.appendChild(b)}sp.appendChild(el('p','qz-e','Activité des 14 derniers jours'));sp.appendChild(strip);
+/* graphique */
+sp.appendChild(el('p','qz-e','Scores par rubrique (meilleur score et moyenne des 5 dernières séries, sur 30)'));
+var ch=el('div','es-chart');RUB.forEach(function(r,c){var row=el('div','es-row');row.appendChild(el('span','es-l',r));var tr=el('div','es-tr');var bs=S.best[c]||0,ls=S.last[c]||[],av=ls.length?ls.slice(-5).reduce(function(a,b){return a+b},0)/Math.min(5,ls.length):0;
+var b1=el('i','b1');b1.style.width=(bs/30*100)+'%';var b2=el('i','b2');b2.style.width=(av/30*100)+'%';tr.appendChild(b1);tr.appendChild(b2);row.appendChild(tr);row.appendChild(el('span','es-v',S.cnt[c]?bs+' · '+String(Math.round(av*10)/10).replace('.',','):'–'));ch.appendChild(row)});sp.appendChild(ch);
+var lg=el('p','qz-e');lg.innerHTML='';var s1=el('span','lg1','■ meilleur score');var s2=el('span','lg2','■ moyenne récente');lg.appendChild(s1);lg.appendChild(document.createTextNode('  '));lg.appendChild(s2);sp.appendChild(lg);
+sp.appendChild(el('h4','oh2','Badges ('+BADGES.filter(function(b){return b[3](S)}).length+' / '+BADGES.length+')'));
+var bg=el('div','es-badges');BADGES.forEach(function(b){var on=b[3](S),c=el('div','es-b'+(on?' on':''));c.appendChild(el('span','bi',b[0]));c.appendChild(el('strong',0,b[1]));c.appendChild(el('small',0,b[2]));bg.appendChild(c)});sp.appendChild(bg);root.appendChild(sp);
+/* favoris */
+var sf=section('es-fav','Favoris et notes'),fl=favs(),flt='all';var fb=el('div'),chs=el('div','chips');sf.appendChild(chs);sf.appendChild(fb);
+function drawF(){chs.textContent='';[['all','Tous'],['lx','Lexique'],['dr','Droit'],['fi','Fiches']].forEach(function(x){chs.appendChild(btn(x[1],'qz-x'+(flt===x[0]?' on':''),function(){flt=x[0];drawF()}))});
+fb.textContent='';fl=favs();var L=fl.filter(function(f){return flt==='all'||f.t===flt});
+if(!L.length)fb.appendChild(el('p','qz-e','Aucun favori ici. Touche ☆ à côté d’un terme du lexique, d’un texte du droit ou d’une fiche de méthode pour l’enregistrer.'));
+L.forEach(function(f){var c=el('div','es-card'),h=el('div','es-fh');h.appendChild(el('small',0,f.sub));c.appendChild(h);c.appendChild(el('h4',0,f.ti));if(f.txt)c.appendChild(el('p',0,f.txt.length>180?f.txt.slice(0,180)+'…':f.txt));
+var ta=el('textarea');ta.placeholder='Ta note personnelle…';ta.value=f.n||'';ta.rows=2;ta.setAttribute('aria-label','Note sur '+f.ti);ta.oninput=function(){var a=favs();a.forEach(function(x){if(x.k===f.k)x.n=ta.value});sv('ldf-fav',a)};c.appendChild(ta);
+var r=el('div','shr-r');r.appendChild(btn('Ouvrir','qz-x',function(){openFav(f)}));r.appendChild(btn('Retirer','qz-x',function(){var a=favs().filter(function(x){return x.k!==f.k});sv('ldf-fav',a);syncStars();drawF()}));c.appendChild(r);fb.appendChild(c)})}
+drawF();
+/* carnet */
+sf.appendChild(el('h4','oh2','Carnet de notes libres'));var nb=el('div'),nt=el('textarea');nt.rows=3;nt.placeholder='Écris une note : définition à retenir, plan de cours, rappel…';
+sf.appendChild(nt);sf.appendChild(btn('Ajouter la note','btn pri',function(){var v=nt.value.trim();if(!v)return;var a=ld('ldf-notes',[]);a.unshift({id:Date.now(),d:today(),t:v});sv('ldf-notes',a.slice(0,200));nt.value='';drawN()})).style.marginTop='8px';sf.appendChild(nb);
+function drawN(){nb.textContent='';ld('ldf-notes',[]).forEach(function(n){var c=el('div','es-card');c.appendChild(el('small',0,lab(n.d)));var ta=el('textarea');ta.value=n.t;ta.rows=3;ta.oninput=function(){var a=ld('ldf-notes',[]);a.forEach(function(x){if(x.id===n.id)x.t=ta.value});sv('ldf-notes',a)};c.appendChild(ta);c.appendChild(btn('Supprimer','qz-x',function(){sv('ldf-notes',ld('ldf-notes',[]).filter(function(x){return x.id!==n.id}));drawN()}));nb.appendChild(c)})}drawN();root.appendChild(sf);
+/* erreurs */
+var se=section('es-err','Mes erreurs'),er=ld('ldf-err',[]);se.appendChild(el('p',0,er.length?er.length+' question'+(er.length>1?'s':'')+' à revoir. Celles que tu réussis disparaissent de la liste.':'Aucune erreur à revoir pour l’instant. Les questions que tu rates dans les tests apparaissent ici.'));
+if(er.length){se.appendChild(btn('🔁 Refaire mes erreurs','btn pri',function(){nav('entrainement',function(){if(window.ldfQuiz)window.ldfQuiz.errors()})}));var by={};er.forEach(function(x){by[x.c]=(by[x.c]||0)+1});var l=el('p','qz-e',Object.keys(by).map(function(c){return RUB[c]+' : '+by[c]}).join(' · '));se.appendChild(l)}
+se.appendChild(btn('📝 Passer un examen blanc','btn sec',function(){nav('entrainement',function(){if(window.ldfQuiz)window.ldfQuiz.exam()})})).style.marginLeft=er.length?'10px':'0';root.appendChild(se);
+/* plan */
+var spn=section('es-plan','Plan de révision');spn.appendChild(el('p',0,'Indique la date de ton examen : le site te propose un planning jour par jour, que tu peux cocher au fur et à mesure.'));var ph=el('div');spn.appendChild(ph);planUI(ph);root.appendChild(spn);
+/* données */
+var sd=section('es-data','Mes données');sd.appendChild(el('p',0,'Tout est enregistré dans ce navigateur, sur ton appareil. Si tu changes de téléphone ou effaces les données du navigateur, tu les perds : fais une sauvegarde de temps en temps.'));
+sd.appendChild(btn('⬇️ Sauvegarder','btn sec',function(){var o={};['ldf-fav','ldf-notes','ldf-err','ldf-prog','ldf-known','ldf-plan','ldf-name','ldf-lb','ldf-maxs'].forEach(function(k){var v=sto(k);if(v!=null)o[k]=v});var u=URL.createObjectURL(new Blob([JSON.stringify(o)],{type:'application/json'})),a=el('a');a.href=u;a.download='ledroitfacile-sauvegarde.json';document.body.appendChild(a);a.click();document.body.removeChild(a);setTimeout(function(){URL.revokeObjectURL(u)},1000)}));
+var fi=el('input');fi.type='file';fi.accept='application/json,.json';fi.style.display='none';fi.onchange=function(){var f=fi.files[0];if(!f)return;var r=new FileReader();r.onload=function(){try{var o=JSON.parse(r.result);Object.keys(o).forEach(function(k){if(/^ldf-/.test(k)&&typeof o[k]==='string')sto(k,o[k])});renderEspace();syncStars();mm.textContent='Sauvegarde restaurée ✓'}catch(e){mm.textContent='Fichier non valide.'}};r.readAsText(f)};
+var mm=el('p','qz-e','');sd.appendChild(fi);sd.appendChild(btn('⬆️ Restaurer','btn sec',function(){fi.click()})).style.marginLeft='10px';sd.appendChild(mm);root.appendChild(sd)}
+window.ldfPage=function(h){if(h==='espace')renderEspace();if(h==='lexique'){var t=document.querySelector('#lexique .tdj');if(t){var n=tdj();if(n)t.parentNode.replaceChild(n,t)}}syncStars()};
+
+/* ---------- Recherche globale ---------- */
+var IDX=null;
+function buildIdx(){IDX={lx:D.map(function(e){return{t:e[0],s:e[1],h:nz(e[0]+' '+e[1]),h0:nz(e[0])}}),dr:[],fi:[],fq:[]};
+(window.ldfT||[]).forEach(function(x){IDX.dr.push({t:x[1],s:x[2]+' '+(x[3]||''),h:nz(x[1]+' '+x[2]+' '+x[3]+' '+x[4]),h0:nz(x[1])})});
+var cur=null,fi=document.querySelector('.fiche'),ft='',n=0;if(fi)Array.prototype.forEach.call(fi.children,function(c){if(c.tagName==='H4'){var cl=c.textContent.replace(/\s*(☆|★)\s*🖨️ PDF\s*$/,'');ft=(cl.split(':')[1]||cl).trim();cur={t:cl,s:'',id:c.id,h:'',h0:nz(c.textContent)};IDX.fi.push(cur)}
+else if(c.tagName==='H5'){n++;c.id=c.id||'fs'+n;cur={t:c.textContent,s:'',id:c.id,f:ft,h:'',h0:nz(c.textContent)};IDX.fi.push(cur)}
+else if(cur){cur.s+=' '+c.textContent}});IDX.fi.forEach(function(x){x.s=x.s.trim();x.h=nz(x.t+' '+x.s)});
+document.querySelectorAll('#faq details').forEach(function(d,k){d.id=d.id||'fq'+k;var s=d.querySelector('summary');var tx=d.textContent.replace(s.textContent,'').trim();IDX.fq.push({t:s.textContent,s:tx,id:d.id,h:nz(s.textContent+' '+tx),h0:nz(s.textContent)})})}
+function snip(s,w){if(!s)return'';var i=nz(s).indexOf(w[0]);var a=Math.max(0,(i<0?0:i)-30);return(a?'… ':'')+s.slice(a,a+110)+(s.length>a+110?' …':'')}
+function search(){if(!IDX)buildIdx();var O=overlay();O.o.className='ovl top';O.c.className='ovl-c wide';var inp=el('input');inp.type='search';inp.placeholder='Chercher un terme, un texte, une fiche, une question…';inp.setAttribute('aria-label','Recherche dans tout le site');inp.className='gsi';O.c.appendChild(inp);
+var out=el('div','gso');O.c.appendChild(out);var groups=[['lx','Lexique'],['dr','Droit sénégalais'],['fi','Fiches de méthode'],['fq','Questions fréquentes']];
+function go(g,x){closeO(O.o);if(g==='lx')toLex(x.t);else if(g==='dr')toDr(x.t);else if(g==='fi')toId('fiches',x.id);else toId('faq',x.id)}
+function draw(){out.textContent='';var w=nz(inp.value.trim()).split(/\s+/).filter(Boolean);if(!w.length){out.appendChild(el('p','qz-e','Tape au moins une lettre. La recherche couvre le lexique, les textes du droit, les fiches de méthode et les questions fréquentes.'));return}
+var any=false;groups.forEach(function(g){var r=IDX[g[0]].filter(function(x){return w.every(function(k){return x.h.indexOf(k)>=0})});r.sort(function(a,b){return(a.h0.indexOf(w[0])===0?0:1)-(b.h0.indexOf(w[0])===0?0:1)});if(!r.length)return;any=true;out.appendChild(el('h4','gsh',g[1]+' ('+r.length+')'));
+r.slice(0,6).forEach(function(x){var b=el('button','gsr');b.type='button';b.appendChild(el('strong',0,(x.f?x.f+' › ':'')+x.t));b.appendChild(el('span',0,snip(x.s,w)));b.onclick=function(){go(g[0],x)};out.appendChild(b)})});
+if(!any)out.appendChild(el('p','qz-e','Aucun résultat. Essaie un autre mot.'))}
+inp.oninput=draw;draw();inp.focus()}
+(function(){var b=$('gs');if(b)b.onclick=search;document.addEventListener('keydown',function(e){var tg=(e.target.tagName||'').toLowerCase();if((e.key==='/'&&tg!=='input'&&tg!=='textarea'&&tg!=='select')||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();if(!document.querySelector('.gsi'))search()}})})();
+
+/* ---------- Mode lecture ---------- */
+(function(){var bar=el('div','lecbar');bar.appendChild(btn('A−','qz-x',function(){var x=document.querySelector('.fs button[data-d="-1"]');if(x)x.click()}));bar.appendChild(btn('A+','qz-x',function(){var x=document.querySelector('.fs button[data-d="1"]');if(x)x.click()}));
+bar.appendChild(btn('✕ Quitter la lecture','qz-x',function(){set(false)}));document.body.appendChild(bar);
+function set(on){document.body.classList.toggle('lec',on);sto('ldf-lec',on?'1':'0');var b=$('lec');if(b)b.setAttribute('aria-pressed',String(on));if(on){var fs=+sto('ldf-fs')||17;if(fs<20){var up=document.querySelector('.fs button[data-d="1"]');for(var k=fs;k<20&&up;k++)up.click()}}}
+var b=$('lec');if(b)b.onclick=function(){set(!document.body.classList.contains('lec'))};
+document.querySelectorAll('.lecb').forEach(function(x){x.onclick=function(){set(true)}});
+if(sto('ldf-lec')==='1')set(true)})();
+var hh=location.hash.replace(/^#\/?/,'').split('?')[0]||sto('ldf-page')||'accueil';window.ldfPage(hh);
 })();
 </script>
 <div id="offb" role="status">Mode hors ligne : le site reste disponible</div>

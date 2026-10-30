@@ -335,7 +335,7 @@ header{z-index:8!important}.menu div{max-height:calc(100vh - 90px);overflow:auto
 
 <section class="alt" id="entrainement" data-page="entrainement"><div class="wrap">
 <h2>Entraîne-toi aux tests psychotechniques.</h2>
-<p class="lead">Les concours de la fonction publique, comme celui de l’ENA, commencent par des tests de langue française, de calcul et de logique. Choisis une rubrique parmi sept : orthographe, vocabulaire, analogies, calcul, suites numériques, lettres et codes, raisonnement logique. Chaque rubrique compte 30 questions de niveau concours, corrigées une à une. Tu peux la quitter à tout moment pour une autre. Défie un ami par lien d’invitation, partage ton score et grimpe au classement.</p>
+<p class="lead">Les concours de la fonction publique, comme celui de l’ENA, commencent par des tests de langue française, de calcul et de logique. Choisis une rubrique parmi sept : orthographe, vocabulaire, analogies, calcul, suites numériques, lettres et codes, raisonnement logique. Chaque rubrique compte 30 questions de niveau concours (50 pour le vocabulaire), corrigées une à une. Tu peux la quitter à tout moment pour une autre. Défie un ami par lien d’invitation, partage ton score et grimpe au classement.</p>
 <div class="ena"><div><h3>Prépare le concours d’entrée à l’ENA</h3><p>Rejoins le groupe WhatsApp « Préparation ENA (LeDroitFacile) » pour t’entraîner avec d’autres candidats.</p></div><a class="btn pri" href="https://chat.whatsapp.com/Ft5zjQXXGmTLjy0iXemyNI?mode=gi_t" target="_blank" rel="noopener">Rejoindre le groupe ENA</a></div>
 <div class="qz" id="qz" aria-live="polite"></div>
 <p class="legal" style="margin:14px 0 0;text-align:left">Questions originales rédigées pour LeDroitFacile SN, à titre d’entraînement. Pour les épreuves officielles, réfère-toi à l’avis de concours en vigueur.</p>
@@ -705,7 +705,7 @@ var R=[
 ["Lettres et codes","Suites alphabétiques, décalages, codage",[]],
 ["Raisonnement logique","Déductions, ordres, syllogismes",[]]
 ];
-var NQ=30;
+var NQ=30;function nq(n){return n===1?50:NQ}
 var rnd=Math.random;
 function sh(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(rnd()*(i+1)),x=a[i];a[i]=a[j];a[j]=x}return a}
 function ri(a,b){return a+Math.floor(rnd()*(b-a+1))}
@@ -751,36 +751,56 @@ var EX=[
 ["Quelle phrase contient une faute ?","Les lois que le Parlement a voté sont claires.",["Les lois que le Parlement a votées sont claires.","Le Parlement a voté ces lois.","Ces lois, il les a votées."],"Le COD « que » est avant le verbe : on écrit « votées »."]
 ],
 [
-["Synonyme de « prolixe » :","verbeux",["concis","timide","sévère"],"Prolixe : qui s’exprime avec trop de mots."],
-["Antonyme de « ténu » :","épais",["fin","mince","subtil"],"Ténu : très mince, très fin."],
-["Synonyme de « fallacieux » :","trompeur",["solide","tardif","bref"],"Un argument fallacieux cherche à induire en erreur."],
-["Les deux entreprises sont accusées de ___ pour fausser la concurrence.","collusion",["collision","collocation","collation"],"La collusion est une entente secrète au détriment d’un tiers."],
-["Il a été ___ de ses fonctions.","révoqué",["invoqué","évoqué","convoqué"],"Révoquer : destituer."],
-["Synonyme de « inique » :","injuste",["sévère","tardif","rare"],"Inique : contraire à l’équité."],
-["Antonyme de « prodigue » :","économe",["généreux","riche","bavard"],"Prodigue : qui dépense sans compter."],
-["Une clause « léonine » est une clause :","qui avantage excessivement une seule partie",["écrite en latin","facultative","tenue secrète"],"Léonine : la part du lion revient à un seul contractant."],
-["Synonyme de « obtempérer » :","obéir",["protester","hésiter","punir"],"Obtempérer, c’est se soumettre à un ordre."],
-["« Déférer à une injonction » signifie :","s’y conformer",["la contester","l’annuler","la différer"],"Déférer à : se soumettre à."],
-["Antonyme de « exogène » :","endogène",["externe","tardif","gênant"],"Exogène : d’origine extérieure ; endogène : d’origine interne."],
-["« Apocryphe » se dit d’un texte :","dont l’authenticité est douteuse",["très ancien","tenu secret","solennel"],"Apocryphe : attribué à un auteur sans preuve."],
-["Un propos « sibyllin » est :","obscur, énigmatique",["agressif","très technique","trop familier"],"Comme les oracles de la Sibylle."],
-["Synonyme de « circonspect » :","prudent",["bavard","distrait","courageux"],"Circonspect : qui agit avec réserve."],
-["Antonyme de « pusillanime » :","courageux",["prudent","bavard","naïf"],"Pusillanime : qui manque de courage."],
-["Une « peccadille » est :","une faute légère",["une grande faute","une petite somme","une maladie bénigne"],"Peccadille : faute sans gravité."],
-["« Aliéner » un bien signifie :","le céder",["l’acquérir","le louer","le perdre par vol"],"Aliéner : transférer la propriété."],
-["Synonyme de « mansuétude » :","indulgence",["sévérité","richesse","lenteur"],"La mansuétude est une douceur à pardonner."],
-["Antonyme de « prolifique » :","stérile",["fécond","productif","savant"],"Prolifique : très productif."],
-["« Ambivalent » signifie :","qui présente deux aspects opposés",["qui hésite longtemps","qui parle deux langues","qui est ambitieux"],"Ambivalent : à la fois positif et négatif."],
-["Synonyme de « ostracisme » :","exclusion",["accueil","éloge","amende"],"Ostracisme : mise à l’écart d’une personne."],
-["Synonyme de « obsolète » :","dépassé",["obligatoire","douteux","oublieux"],"Obsolète : qui n’est plus en usage."],
-["Synonyme de « onéreux » :","coûteux",["pénible","gratuit","ancien"],"Un contrat à titre onéreux se fait contre paiement."],
-["Synonyme de « spoliation » :","dépossession",["restitution","héritage","vente"],"Spolier : dépouiller de ce qu’on possède."],
-["Synonyme de « affable » :","aimable, courtois",["faible","paresseux","fier"],"Affable : d’un abord agréable."],
-["Antonyme de « abscons » :","clair",["obscur","savant","compliqué"],"Abscons : difficile à comprendre."],
-["Synonyme de « corollaire » :","conséquence logique",["contradiction","préambule","exception"],"Corollaire : proposition qui découle d’une autre."],
-["Synonyme de « arguer » :","prétexter",["accuser","hésiter","renoncer"],"Arguer de : tirer argument de."],
-["Synonyme de « délétère » :","nuisible",["léger","utile","discret"],"Délétère : nocif pour la santé ou le moral."],
-["Ce mot a plusieurs ___.","acceptions",["acceptations","acceptances","acceptiens"],"Une acception est le sens d’un mot."]
+["Synonyme de « loquace » :","bavard",["taciturne","hésitant","rapide"],"Loquace : qui parle volontiers et beaucoup."],
+["Antonyme de « laconique » :","verbeux",["bref","muet","sobre"],"Laconique : qui s’exprime en peu de mots ; son contraire est verbeux."],
+["Synonyme de « acrimonieux » :","hargneux",["aimable","confus","tardif"],"Acrimonieux : plein d’aigreur, de mauvaise humeur dans ses propos."],
+["Antonyme de « véhément » :","modéré",["violent","ardent","bruyant"],"Véhément : qui s’exprime avec force et passion."],
+["Synonyme de « pernicieux » :","dangereux",["précieux","discret","tenace"],"Pernicieux : très nuisible, souvent de façon insidieuse."],
+["Antonyme de « bénin » :","grave",["léger","doux","rare"],"Bénin : sans gravité (une tumeur bénigne) ; contraire : grave, malin."],
+["Synonyme de « vindicte » :","vengeance",["pardon","accusation","amende"],"On désigne un suspect à la « vindicte populaire » : à la vengeance de la foule."],
+["Un ton « péremptoire » est un ton :","qui n’admet aucune réplique",["qui dure très peu","qui est facultatif","qui est périmé"],"Péremptoire : qui tranche et ne souffre pas la contradiction."],
+["Synonyme de « inéluctable » :","inévitable",["improbable","tardif","éphémère"],"Inéluctable : contre quoi on ne peut lutter."],
+["Antonyme de « éphémère » :","durable",["fugace","bref","léger"],"Éphémère : qui ne dure qu’un jour, très court."],
+["Une maison « vétuste » est :","vieille et délabrée",["moderne","très vaste","solidement bâtie"],"Vétuste : détérioré par le temps ou l’usage."],
+["Le Président a ___ la peine du condamné en une peine moins lourde.","commué",["commis","commémoré","consommé"],"Commuer une peine : la remplacer par une peine plus légère."],
+["Il a ___ à la demande de son collègue.","acquiescé",["acquis","acquitté","requis"],"Acquiescer à : donner son accord."],
+["Le prévenu a été ___ faute de preuves.","acquitté",["acquiescé","acquis","requis"],"Acquitter : déclarer non coupable ; ne pas confondre avec acquiescer."],
+["Synonyme de « inopiné » :","imprévu",["habituel","secret","lent"],"Un contrôle inopiné n’est pas annoncé à l’avance."],
+["Synonyme de « pléthore » :","surabondance",["pénurie","rareté","diversité"],"Pléthore : abondance excessive."],
+["Antonyme de « indigence » :","opulence",["pauvreté","misère","dénuement"],"Indigence : extrême pauvreté ; contraire : opulence, richesse."],
+["Synonyme de « apanage » :","prérogative",["fardeau","défaut","salaire"],"Apanage : ce qui est le propre de quelqu’un ou d’un groupe."],
+["Une décision « discrétionnaire » est :","laissée à l’appréciation de l’autorité",["rendue en secret","contraire à la loi","rendue à l’unanimité"],"Le pouvoir discrétionnaire laisse à l’autorité le choix, sous le contrôle du juge."],
+["Une disposition « caduque » est :","devenue sans effet",["rédigée de façon floue","appliquée avec rigueur","votée à l’unanimité"],"Caduc : qui a perdu sa validité."],
+["Synonyme de « atermoyer » :","tergiverser",["accélérer","conclure","trancher"],"Atermoyer : multiplier les délais pour gagner du temps."],
+["Antonyme de « vilipender » :","louer",["mépriser","dénigrer","critiquer"],"Vilipender : traiter avec mépris, dénigrer."],
+["La « prévarication » est :","le manquement d’un agent public à ses devoirs",["la lecture préalable d’un texte","un retard de paiement","la prévision d’un risque"],"Prévariquer : trahir les devoirs de sa charge."],
+["Synonyme de « pérorer » :","discourir avec emphase",["se taire","plaider","conclure"],"Pérorer : parler longuement, avec prétention."],
+["Synonyme de « sagace » :","perspicace",["naïf","hésitant","bruyant"],"Sagace : qui comprend vite et finement."],
+["Antonyme de « emphatique » :","sobre",["pompeux","solennel","lyrique"],"Emphatique : qui exagère, pompeux."],
+["Synonyme de « dilapider » :","gaspiller",["épargner","estimer","saisir"],"Dilapider : dépenser sans mesure."],
+["Synonyme de « préjudiciable » :","dommageable",["avantageux","indifférent","préalable"],"Préjudiciable : qui cause un préjudice."],
+["Ce témoignage est ___ : il ne laisse aucun doute.","probant",["probe","plausible","prouvé"],"Probant : qui prouve ; probe signifie honnête."],
+["Un homme « probe » est :","honnête",["riche","discret","prudent"],"Probe : d’une honnêteté scrupuleuse."],
+["Il s’est ___ de toute responsabilité.","exonéré",["exhorté","exacerbé","exalté"],"Exonérer : décharger d’une obligation ou d’une charge."],
+["Synonyme de « litige » :","différend",["accord","serment","préavis"],"Litige : désaccord qui oppose des parties."],
+["Synonyme de « élucider » :","éclaircir",["obscurcir","résumer","reporter"],"Élucider : rendre clair ce qui était obscur."],
+["Antonyme de « fastidieux » :","captivant",["ennuyeux","long","répétitif"],"Fastidieux : qui lasse par sa monotonie."],
+["Synonyme de « magnanime » :","généreux et clément",["sévère","rancunier","craintif"],"Magnanime : qui pardonne avec grandeur d’âme."],
+["Une « velléité » est :","un désir faible qui reste sans suite",["une volonté ferme","un refus net","un ordre"],"Velléité : intention qui n’aboutit pas à l’action."],
+["Un argument « spécieux » est un argument :","trompeur sous une apparence de vérité",["très précis","rédigé avec soin","difficile à comprendre"],"Spécieux : qui séduit mais ne tient pas."],
+["Synonyme de « tacite » :","implicite",["écrit","solennel","bruyant"],"Une reconduction tacite se fait sans qu’on l’exprime."],
+["Antonyme de « tacite » :","explicite",["silencieux","implicite","secret"],"Tacite : non formulé ; explicite : exprimé clairement."],
+["Un magistrat « inamovible » est un magistrat :","qu’on ne peut ni déplacer ni révoquer",["très âgé","qui ne se déplace jamais par goût","nommé à vie par le peuple"],"L’inamovibilité protège l’indépendance des juges du siège."],
+["Un événement « fortuit » est un événement :","dû au hasard",["prévu","exceptionnel","tardif"],"Fortuit : qui arrive par hasard (cas fortuit)."],
+["Synonyme de « émérite » :","chevronné",["novice","indécis","ancien élève"],"Émérite : très expérimenté et d’un grand talent."],
+["Antonyme de « ardu » :","facile",["difficile","pénible","long"],"Ardu : difficile à réaliser, qui demande un grand effort."],
+["Synonyme de « ténacité » :","persévérance",["fragilité","lenteur","rancune"],"Ténacité : fermeté dans l’effort."],
+["Synonyme de « subterfuge » :","ruse",["aveu","loyauté","erreur"],"Subterfuge : moyen détourné pour se tirer d’embarras."],
+["Antonyme de « véridique » :","mensonger",["honnête","exact","sincère"],"Véridique : conforme à la vérité."],
+["Synonyme de « stipuler » :","énoncer expressément",["supposer","ignorer","contester"],"Le contrat stipule : il prévoit en termes exprès."],
+["Antonyme de « licite » :","illicite",["légal","permis","courant"],"Licite : permis par la loi."],
+["L’Assemblée a ___ le traité.","ratifié",["rectifié","ratissé","rétabli"],"Ratifier : approuver officiellement ; rectifier : corriger."],
+["Une personne « irascible » est :","facilement coléreuse",["indécise","avide","maladroite"],"Irascible : qui s’emporte pour un rien."]
 ],
 [
 ["Bailleur : loyer :: Salarié : ?","salaire",["contrat","patron","travail"],"Chacun perçoit la rémunération de ce qu’il fournit."],
@@ -880,7 +900,7 @@ function buildQ(n,seed){rnd=mulberry(seed);var q;
 if(n<3)q=sh(H(EX[n]));
 else if(n===3)q=many(gCalc,NQ);else if(n===4)q=many(gSuite,NQ);else if(n===5)q=many(gLet,NQ);
 else q=sh(H(LOG).concat(many(gLog,NQ-LOG.length)));
-rnd=Math.random;return q.slice(0,NQ)}
+rnd=Math.random;return q.slice(0,nq(n))}
 /* Classement mondial (facultatif) : colle ici l’adresse d’une base Firebase Realtime Database, ex. 'https://mon-projet-default-rtdb.firebaseio.com' */
 var LB_URL='';
 R.forEach(function(r,n){r[2]=buildQ(n,n+1)});
@@ -906,7 +926,7 @@ function gPost(e){if(!LB_URL)return;try{fetch(LB_URL+'/scores/c'+e.c+'.json',{me
 function baseUrl(){return /^https?:/.test(location.protocol)?location.origin+location.pathname:'https://bayeiboudiop09-a11y.github.io/LeDroitFacile-/'}
 function enc(o){return btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')}
 function dec(s){try{s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';var o=JSON.parse(decodeURIComponent(escape(atob(s))));
-if(!o||typeof o.n!=='string'||!(o.c>=0&&o.c<7)||!(o.s>0)||!(o.p>=0&&o.p<=NQ)||!(o.t>=0&&o.t<=86400))return null;
+if(!o||typeof o.n!=='string'||!(o.c>=0&&o.c<7)||!(o.s>0)||!(o.p>=0&&o.p<=nq(o.c))||!(o.t>=0&&o.t<=86400))return null;
 return {n:o.n.slice(0,20),c:o.c|0,s:o.s|0,p:o.p|0,t:o.t|0}}catch(e){return null}}
 function copy(s,b){var o=b.textContent;function ok(){b.textContent='Copié ✓';setTimeout(function(){b.textContent=o},1600)}
 function fb(){var ta=document.createElement('textarea');ta.value=s;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok()}catch(e){}document.body.removeChild(ta)}
@@ -923,7 +943,7 @@ box.appendChild(el('p','qz-q','Choisis une rubrique'));
 var g=el('div','rb');
 R.forEach(function(r,n){var b=el('button','rb-c'),mb=myBest(n);b.type='button';
 b.appendChild(el('strong',0,r[0]));b.appendChild(el('span',0,r[1]));
-b.appendChild(el('em',0,mb!=null?'Meilleur score : '+mb+' / '+NQ:NQ+' questions'));
+b.appendChild(el('em',0,mb!=null?'Meilleur score : '+mb+' / '+nq(n):nq(n)+' questions'));
 b.onclick=function(){start(n)};g.appendChild(b)});
 var ex=el('button','rb-c'),eb=examBest();ex.type='button';ex.appendChild(el('strong',0,'📝 Examen blanc'));ex.appendChild(el('span',0,'Les 7 rubriques mélangées · 35 questions · 35 minutes · note sur 20'));ex.appendChild(el('em',0,eb!=null?'Meilleure note : '+fn1(eb)+' / 20':'Comme au concours'));ex.onclick=examStart;g.appendChild(ex);
 var er=ld('ldf-err').length,e2=el('button','rb-c');e2.type='button';e2.appendChild(el('strong',0,'🔁 Mes erreurs'));e2.appendChild(el('span',0,'Refais les questions que tu as ratées'));e2.appendChild(el('em',0,er?er+' à revoir':'Rien à revoir'));e2.onclick=errStart;g.appendChild(e2);
@@ -938,7 +958,7 @@ var out=el('div'),note=el('p','qz-e','');box.appendChild(out);box.appendChild(no
 function fill(es,msg){out.textContent='';var L=stand(es,c).slice(0,20),me=(myName()||'Joueur').toLowerCase();
 if(!L.length){out.appendChild(el('p','qz-e','Aucun score pour l’instant. Joue une rubrique pour apparaître ici.'))}
 else{var t=el('table','lb'),th=el('tr');['#','Joueur',c==='g'?'Points':'Score','Temps'].forEach(function(h,x){th.appendChild(el('th',x>1?'tn':0,h))});t.appendChild(th);
-L.forEach(function(e,x){var tr=el('tr',String(e.n).toLowerCase()===me?'me':0);tr.appendChild(el('td',0,x<3?['🥇','🥈','🥉'][x]:String(x+1)));tr.appendChild(el('td',0,e.n+(c==='g'?' · '+e.z+'/7':'')));tr.appendChild(el('td','tn',e.p+(c==='g'?'':' / '+NQ)));tr.appendChild(el('td','tn',fmt(e.t)));t.appendChild(tr)});out.appendChild(t)}
+L.forEach(function(e,x){var tr=el('tr',String(e.n).toLowerCase()===me?'me':0);tr.appendChild(el('td',0,x<3?['🥇','🥈','🥉'][x]:String(x+1)));tr.appendChild(el('td',0,e.n+(c==='g'?' · '+e.z+'/7':'')));tr.appendChild(el('td','tn',e.p+(c==='g'?'':' / '+nq(c))));tr.appendChild(el('td','tn',fmt(e.t)));t.appendChild(tr)});out.appendChild(t)}
 note.textContent=msg||''}
 var loc='Classement enregistré sur cet appareil : il réunit tes parties et les joueurs qui t’ont défié.';
 if(src==='global'){out.appendChild(el('p','qz-e','Chargement…'));gFetch(c).then(function(es){fill(es,'Classement mondial (meilleur score de chaque joueur).')}).catch(function(){fill(ldb(),'Connexion impossible : classement de cet appareil.')})}
@@ -1027,7 +1047,7 @@ box.appendChild(shr('⚔️ Défier un ami (mêmes questions que toi)','⚔️ '
 box.appendChild(shr('Partager mon score','J’ai fait '+score+'/'+n+' en « '+rn+' » sur LeDroitFacile SN ('+fmt(sec)+'). Tu peux faire mieux ?',site+'#/entrainement'))}}
 function duelIntro(o){clearInterval(tick);box.textContent='';
 box.appendChild(el('p','qz-q','⚔️ '+o.n+' te défie !'));
-box.appendChild(el('p',0,R[o.c][0]+' · '+NQ+' questions. Score à battre : '+o.p+' / '+NQ+' en '+fmt(o.t)+'.'));
+box.appendChild(el('p',0,R[o.c][0]+' · '+nq(o.c)+' questions. Score à battre : '+o.p+' / '+nq(o.c)+' en '+fmt(o.t)+'.'));
 var nr=el('div','nm'),lb=el('label',0,'Ton pseudo'),inp=el('input');lb.htmlFor='nmd';inp.id='nmd';inp.maxLength=20;inp.placeholder='ex. Moussa';inp.value=myName();nr.appendChild(lb);nr.appendChild(inp);box.appendChild(nr);
 var go=el('button','btn pri','Relever le défi');go.type='button';go.onclick=function(){sto('ldf-name',inp.value.trim().slice(0,20));addScore({n:o.n,c:o.c,p:o.p,t:o.t,d:Date.now(),o:'duel'});start(o.c,o.s,o)};
 var no=el('button','btn sec','Choisir une autre rubrique');no.type='button';no.style.marginLeft='10px';no.onclick=menu;box.appendChild(go);box.appendChild(no)}
@@ -1199,13 +1219,13 @@ var D=[];try{D=JSON.parse($('lxd').textContent)}catch(e){}
 window.ldfLog=function(e){var a=ld('ldf-prog',[]);e.d=today();a.push(e);sv('ldf-prog',a.slice(-800))};
 function stats(){var a=ld('ldf-prog',[]),days={},best={},cnt={},last={},ex=null,wins=0,fix=0,perfect=false,cards=0,games=0;
 a.forEach(function(e){days[e.d]=1;
-if(e.k==='quiz'||e.k==='duel'){var c=e.c;games++;cnt[c]=(cnt[c]||0)+1;(last[c]=last[c]||[]).push(e.p);if(best[c]==null||e.p>best[c])best[c]=e.p;if(e.p>=30)perfect=true;if(e.k==='duel'&&e.w)wins++}
+if(e.k==='quiz'||e.k==='duel'){var c=e.c;games++;cnt[c]=(cnt[c]||0)+1;(last[c]=last[c]||[]).push(e.p);if(best[c]==null||e.p>best[c])best[c]=e.p;if(e.p>=nq(c))perfect=true;if(e.k==='duel'&&e.w)wins++}
 if(e.k==='exam'){games++;if(ex===null||e.note>ex)ex=e.note}
 if(e.k==='fix')fix++;if(e.k==='card')cards+=e.n||0});
 var t=dayN(today()),x=days[today()]?t:t-1,s=0;while(days[fromDay(x)]){s++;x--}
 var mx=Math.max(ld('ldf-maxs',0),s);if(mx>ld('ldf-maxs',0))sv('ldf-maxs',mx);
 return{days:days,best:best,cnt:cnt,last:last,exam:ex,wins:wins,fix:fix,perfect:perfect,cards:cards,games:games,streak:s,maxs:mx,
-known:Object.keys(ld('ldf-known',{})).length,favs:ld('ldf-fav',[]).length,rubs:Object.keys(cnt).length,top:Math.max.apply(null,[0].concat(Object.keys(best).map(function(k){return best[k]})))}}
+known:Object.keys(ld('ldf-known',{})).length,favs:ld('ldf-fav',[]).length,rubs:Object.keys(cnt).length,top:Math.max.apply(null,[0].concat(Object.keys(best).map(function(k){return best[k]*30/nq(+k)})))}}
 var BADGES=[
 ['🌱','Premier pas','Termine une première série de questions.',function(s){return s.games>=1}],
 ['🔥','Régulier','3 jours de suite.',function(s){return s.maxs>=3}],
@@ -1272,7 +1292,7 @@ menu()}
 
 /* ---------- Plan de révision ---------- */
 function planTasks(f){var ena=[],lic=[];
-RUB.forEach(function(r){ena.push(['🎯','Rubrique « '+r+' » : une série de 30 questions','entrainement'])});
+RUB.forEach(function(r){ena.push(['🎯','Rubrique « '+r+' » : une série de '+(r==='Vocabulaire'?50:30)+' questions','entrainement'])});
 ena.push(['🔁','Refaire mes erreurs','entrainement']);
 lic.push(['📖','Lexique : 20 flashcards','lexique']);
 ['La dissertation','Le cas pratique','Le commentaire d’arrêt','Le commentaire de texte'].forEach(function(x){lic.push(['📝','Fiche de méthode : '+x,'fiches'])});
@@ -1315,7 +1335,7 @@ var strip=el('div','es-strip');for(var d=13;d>=0;d--){var ds=fromDay(dayN(today(
 /* graphique */
 sp.appendChild(el('p','qz-e','Scores par rubrique (meilleur score et moyenne des 5 dernières séries, sur 30)'));
 var ch=el('div','es-chart');RUB.forEach(function(r,c){var row=el('div','es-row');row.appendChild(el('span','es-l',r));var tr=el('div','es-tr');var bs=S.best[c]||0,ls=S.last[c]||[],av=ls.length?ls.slice(-5).reduce(function(a,b){return a+b},0)/Math.min(5,ls.length):0;
-var b1=el('i','b1');b1.style.width=(bs/30*100)+'%';var b2=el('i','b2');b2.style.width=(av/30*100)+'%';tr.appendChild(b1);tr.appendChild(b2);row.appendChild(tr);row.appendChild(el('span','es-v',S.cnt[c]?bs+' · '+String(Math.round(av*10)/10).replace('.',','):'–'));ch.appendChild(row)});sp.appendChild(ch);
+var b1=el('i','b1');b1.style.width=(bs/nq(c)*100)+'%';var b2=el('i','b2');b2.style.width=(av/nq(c)*100)+'%';tr.appendChild(b1);tr.appendChild(b2);row.appendChild(tr);row.appendChild(el('span','es-v',S.cnt[c]?bs+' · '+String(Math.round(av*10)/10).replace('.',','):'–'));ch.appendChild(row)});sp.appendChild(ch);
 var lg=el('p','qz-e');lg.innerHTML='';var s1=el('span','lg1','■ meilleur score');var s2=el('span','lg2','■ moyenne récente');lg.appendChild(s1);lg.appendChild(document.createTextNode('  '));lg.appendChild(s2);sp.appendChild(lg);
 sp.appendChild(el('h4','oh2','Badges ('+BADGES.filter(function(b){return b[3](S)}).length+' / '+BADGES.length+')'));
 var bg=el('div','es-badges');BADGES.forEach(function(b){var on=b[3](S),c=el('div','es-b'+(on?' on':''));c.appendChild(el('span','bi',b[0]));c.appendChild(el('strong',0,b[1]));c.appendChild(el('small',0,b[2]));bg.appendChild(c)});sp.appendChild(bg);root.appendChild(sp);
